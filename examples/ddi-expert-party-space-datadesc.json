@@ -52,22 +52,626 @@
   "schema:distribution": [
     {
       "@type": [
-        "schema:DataDownload"
+        "schema:DataDownload",
+        "cdi:TabularTextDataSet"
       ],
       "schema:name": "Stata.tab",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/113990",
       "schema:encodingFormat": [
         "text/tab-separated-values"
+      ],
+      "csvw:delimiter": "\t",
+      "csvw:header": true,
+      "csvw:headerRowCount": 1,
+      "cdi:hasPhysicalMapping": [
+        {
+          "cdi:index": 0,
+          "schema:name": "country",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685246"
+          }
+        },
+        {
+          "cdi:index": 1,
+          "schema:name": "n",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685279"
+          }
+        },
+        {
+          "cdi:index": 2,
+          "schema:name": "total",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685312"
+          }
+        },
+        {
+          "cdi:index": 3,
+          "schema:name": "pty1a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685293"
+          }
+        },
+        {
+          "cdi:index": 4,
+          "schema:name": "pty2a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685248"
+          }
+        },
+        {
+          "cdi:index": 5,
+          "schema:name": "pty3a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685290"
+          }
+        },
+        {
+          "cdi:index": 6,
+          "schema:name": "pty4a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685285"
+          }
+        },
+        {
+          "cdi:index": 7,
+          "schema:name": "pty5a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685271"
+          }
+        },
+        {
+          "cdi:index": 8,
+          "schema:name": "pty6a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685301"
+          }
+        },
+        {
+          "cdi:index": 9,
+          "schema:name": "pty7a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685267"
+          }
+        },
+        {
+          "cdi:index": 10,
+          "schema:name": "pty8a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685250"
+          }
+        },
+        {
+          "cdi:index": 11,
+          "schema:name": "pty9a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685311"
+          }
+        },
+        {
+          "cdi:index": 12,
+          "schema:name": "pty10a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685296"
+          }
+        },
+        {
+          "cdi:index": 13,
+          "schema:name": "pty11a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685269"
+          }
+        },
+        {
+          "cdi:index": 14,
+          "schema:name": "pty12a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685255"
+          }
+        },
+        {
+          "cdi:index": 15,
+          "schema:name": "pty13a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685273"
+          }
+        },
+        {
+          "cdi:index": 16,
+          "schema:name": "pty14a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685298"
+          }
+        },
+        {
+          "cdi:index": 17,
+          "schema:name": "cat1tot",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685266"
+          }
+        },
+        {
+          "cdi:index": 18,
+          "schema:name": "cat2tot",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685239"
+          }
+        },
+        {
+          "cdi:index": 19,
+          "schema:name": "cat3tot",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685295"
+          }
+        },
+        {
+          "cdi:index": 20,
+          "schema:name": "cat4tot",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685237"
+          }
+        },
+        {
+          "cdi:index": 21,
+          "schema:name": "cat5tot",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685299"
+          }
+        },
+        {
+          "cdi:index": 22,
+          "schema:name": "cat6tot",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685283"
+          }
+        },
+        {
+          "cdi:index": 23,
+          "schema:name": "cat7tot",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685236"
+          }
+        },
+        {
+          "cdi:index": 24,
+          "schema:name": "cat8tot",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685277"
+          }
+        },
+        {
+          "cdi:index": 25,
+          "schema:name": "cat9tot",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685330"
+          }
+        },
+        {
+          "cdi:index": 26,
+          "schema:name": "cat10tot",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v685309"
+          }
+        }
       ]
     },
     {
       "@type": [
-        "schema:DataDownload"
+        "schema:DataDownload",
+        "cdi:TabularTextDataSet"
       ],
       "schema:name": "Survey data.tab",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/655002",
       "schema:encodingFormat": [
         "text/tab-separated-values"
+      ],
+      "csvw:delimiter": "\t",
+      "csvw:header": true,
+      "csvw:headerRowCount": 1,
+      "cdi:hasPhysicalMapping": [
+        {
+          "cdi:index": 0,
+          "schema:name": "Survey",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441775"
+          }
+        },
+        {
+          "cdi:index": 1,
+          "schema:name": "Left1",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441765"
+          }
+        },
+        {
+          "cdi:index": 2,
+          "schema:name": "right1",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441757"
+          }
+        },
+        {
+          "cdi:index": 3,
+          "schema:name": "party1a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441754"
+          }
+        },
+        {
+          "cdi:index": 4,
+          "schema:name": "party2a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441759"
+          }
+        },
+        {
+          "cdi:index": 5,
+          "schema:name": "party3a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441756"
+          }
+        },
+        {
+          "cdi:index": 6,
+          "schema:name": "party4a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441749"
+          }
+        },
+        {
+          "cdi:index": 7,
+          "schema:name": "party5a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441761"
+          }
+        },
+        {
+          "cdi:index": 8,
+          "schema:name": "party6a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441746"
+          }
+        },
+        {
+          "cdi:index": 9,
+          "schema:name": "party7a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441760"
+          }
+        },
+        {
+          "cdi:index": 10,
+          "schema:name": "party8a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441758"
+          }
+        },
+        {
+          "cdi:index": 11,
+          "schema:name": "party9a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441762"
+          }
+        },
+        {
+          "cdi:index": 12,
+          "schema:name": "party10a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441769"
+          }
+        },
+        {
+          "cdi:index": 13,
+          "schema:name": "party11a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441777"
+          }
+        },
+        {
+          "cdi:index": 14,
+          "schema:name": "party12a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441748"
+          }
+        },
+        {
+          "cdi:index": 15,
+          "schema:name": "party13a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441743"
+          }
+        },
+        {
+          "cdi:index": 16,
+          "schema:name": "party14a",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441741"
+          }
+        },
+        {
+          "cdi:index": 17,
+          "schema:name": "issue1",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441753"
+          }
+        },
+        {
+          "cdi:index": 18,
+          "schema:name": "issue2",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441742"
+          }
+        },
+        {
+          "cdi:index": 19,
+          "schema:name": "issue3",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441767"
+          }
+        },
+        {
+          "cdi:index": 20,
+          "schema:name": "issue4",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441744"
+          }
+        },
+        {
+          "cdi:index": 21,
+          "schema:name": "issue5",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441787"
+          }
+        },
+        {
+          "cdi:index": 22,
+          "schema:name": "issue6",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441781"
+          }
+        },
+        {
+          "cdi:index": 23,
+          "schema:name": "issue7",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441784"
+          }
+        },
+        {
+          "cdi:index": 24,
+          "schema:name": "issue8",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441768"
+          }
+        },
+        {
+          "cdi:index": 25,
+          "schema:name": "issue9",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441776"
+          }
+        },
+        {
+          "cdi:index": 26,
+          "schema:name": "issue10",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441747"
+          }
+        },
+        {
+          "cdi:index": 27,
+          "schema:name": "issue11",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441745"
+          }
+        },
+        {
+          "cdi:index": 28,
+          "schema:name": "issue12",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441773"
+          }
+        },
+        {
+          "cdi:index": 29,
+          "schema:name": "issue13",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441780"
+          }
+        },
+        {
+          "cdi:index": 30,
+          "schema:name": "issue14",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441763"
+          }
+        },
+        {
+          "cdi:index": 31,
+          "schema:name": "left2",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441786"
+          }
+        },
+        {
+          "cdi:index": 32,
+          "schema:name": "right2",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441774"
+          }
+        },
+        {
+          "cdi:index": 33,
+          "schema:name": "party1b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441755"
+          }
+        },
+        {
+          "cdi:index": 34,
+          "schema:name": "party2b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441764"
+          }
+        },
+        {
+          "cdi:index": 35,
+          "schema:name": "party3b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441783"
+          }
+        },
+        {
+          "cdi:index": 36,
+          "schema:name": "party4b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441779"
+          }
+        },
+        {
+          "cdi:index": 37,
+          "schema:name": "party5b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441751"
+          }
+        },
+        {
+          "cdi:index": 38,
+          "schema:name": "party6b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441778"
+          }
+        },
+        {
+          "cdi:index": 39,
+          "schema:name": "party7b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441750"
+          }
+        },
+        {
+          "cdi:index": 40,
+          "schema:name": "party8b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441782"
+          }
+        },
+        {
+          "cdi:index": 41,
+          "schema:name": "party9b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441766"
+          }
+        },
+        {
+          "cdi:index": 42,
+          "schema:name": "party10b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441770"
+          }
+        },
+        {
+          "cdi:index": 43,
+          "schema:name": "party11b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441771"
+          }
+        },
+        {
+          "cdi:index": 44,
+          "schema:name": "party12b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441752"
+          }
+        },
+        {
+          "cdi:index": 45,
+          "schema:name": "party13b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441785"
+          }
+        },
+        {
+          "cdi:index": 46,
+          "schema:name": "party14b",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v2441772"
+          }
+        }
       ]
     }
   ],
@@ -838,7 +1442,7 @@
         "@id": "https://w3id.org/cdif/data_description/1.0"
       }
     ],
-    "schema:description": "Metadata harvested from Harvard Dataverse DDI Codebook 2.5 export (doi:10.7910/DVN/EZNWPA, /api/datasets/export?exporter=ddi). Converted from DDI Codebook 2.5 to CDIF DataDescription profile by Claude Code. Variable descriptions mapped from DDI <var> elements to schema:variableMeasured with cdi:InstanceVariable extensions. DDI varFormat mapped to cdi:intendedDataType, DDI intrvl mapped to cdi:role (contin->MeasureComponent, discrete->AttributeComponent). Summary statistics (min/max) preserved.",
+    "schema:description": "Metadata harvested from Harvard Dataverse DDI Codebook 2.5 export (doi:10.7910/DVN/EZNWPA, /api/datasets/export?exporter=ddi). Converted from DDI Codebook 2.5 to CDIF DataDescription profile by Claude Code. Variable descriptions mapped from DDI <var> elements to schema:variableMeasured with cdi:InstanceVariable extensions. DDI varFormat mapped to cdi:intendedDataType, DDI intrvl mapped to cdi:role (contin->MeasureComponent, discrete->AttributeComponent). Summary statistics (min/max) preserved. Tab file headers fetched to build cdi:hasPhysicalMapping with column indices, physical data types, and formats_InstanceVariable references. Distributions typed as cdi:TabularTextDataSet with CSVW properties.",
     "schema:includedInDataCatalog": {
       "@type": [
         "schema:DataCatalog"
