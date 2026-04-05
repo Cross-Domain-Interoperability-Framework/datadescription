@@ -1,0 +1,843 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "spdx": "http://spdx.org/rdf/terms#"
+  },
+  "@id": "https://doi.org/10.7910/DVN/EZNWPA",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:name": "Replication data for: Expert Interpretations of Party Space and Party Locations in 42 Societies",
+  "schema:description": "The terms 'left' and 'right' are widely used to organize party competition and to shape connections between citizens and political parties. Recent and dramatic changes in the world, however, raise important questions about the meaning and importance of left-right ideology. Most notably, the collapse of communism has led to the development of a host of new democracies. And in advanced industrial societies, conflict has emerged over issues like the environment and immigration. This paper draws on a survey of political experts in 42 societies to address three questions raised by these changes. First, is the language of left and right still widely used, even in recently democratized countries? Second, do there exist secondary dimensions of political conflict that are orthogonal to the left-right dimension? Third, and most importantly, what substantive issues define the meaning of left-right ideology? In addition to addressing these questions, we present data on the left-right locations of political parties in each of the 42 countries",
+  "schema:identifier": "https://doi.org/10.7910/DVN/EZNWPA",
+  "schema:dateModified": "2007-07",
+  "schema:datePublished": "2007-11-28",
+  "schema:keywords": [
+    "party systems",
+    "political ideology",
+    "party competition",
+    "left-right scales"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "John Huber"
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Ronald Inglehart"
+      }
+    ]
+  },
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Harvard Dataverse"
+  },
+  "schema:license": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "schema:url": "https://doi.org/10.7910/DVN/EZNWPA",
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "Stata.tab",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/113990",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ]
+    },
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:name": "Survey data.tab",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/655002",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ]
+    }
+  ],
+  "schema:variableMeasured": [
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685246",
+      "schema:name": "country",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685279",
+      "schema:name": "n",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685312",
+      "schema:name": "total",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685293",
+      "schema:name": "pty1a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685248",
+      "schema:name": "pty2a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685290",
+      "schema:name": "pty3a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685285",
+      "schema:name": "pty4a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685271",
+      "schema:name": "pty5a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685301",
+      "schema:name": "pty6a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685267",
+      "schema:name": "pty7a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685250",
+      "schema:name": "pty8a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685311",
+      "schema:name": "pty9a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685296",
+      "schema:name": "pty10a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685269",
+      "schema:name": "pty11a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685255",
+      "schema:name": "pty12a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685273",
+      "schema:name": "pty13a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685298",
+      "schema:name": "pty14a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685266",
+      "schema:name": "cat1tot",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685239",
+      "schema:name": "cat2tot",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685295",
+      "schema:name": "cat3tot",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685237",
+      "schema:name": "cat4tot",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685299",
+      "schema:name": "cat5tot",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685283",
+      "schema:name": "cat6tot",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685236",
+      "schema:name": "cat7tot",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685277",
+      "schema:name": "cat8tot",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685330",
+      "schema:name": "cat9tot",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v685309",
+      "schema:name": "cat10tot",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441775",
+      "schema:name": "Survey",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441765",
+      "schema:name": "Left1",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441757",
+      "schema:name": "right1",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441754",
+      "schema:name": "party1a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441759",
+      "schema:name": "party2a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441756",
+      "schema:name": "party3a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441749",
+      "schema:name": "party4a",
+      "schema:description": "party4a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441761",
+      "schema:name": "party5a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441746",
+      "schema:name": "party6a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441760",
+      "schema:name": "party7a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441758",
+      "schema:name": "party8a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441762",
+      "schema:name": "party9a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441769",
+      "schema:name": "party10a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441777",
+      "schema:name": "party11a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441748",
+      "schema:name": "party12a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441743",
+      "schema:name": "party13a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441741",
+      "schema:name": "party14a",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441753",
+      "schema:name": "issue1",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441742",
+      "schema:name": "issue2",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441767",
+      "schema:name": "issue3",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441744",
+      "schema:name": "issue4",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441787",
+      "schema:name": "issue5",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441781",
+      "schema:name": "issue6",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441784",
+      "schema:name": "issue7",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441768",
+      "schema:name": "issue8",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441776",
+      "schema:name": "issue9",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441747",
+      "schema:name": "issue10",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441745",
+      "schema:name": "issue11",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441773",
+      "schema:name": "issue12",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441780",
+      "schema:name": "issue13",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441763",
+      "schema:name": "issue14",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441786",
+      "schema:name": "left2",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441774",
+      "schema:name": "right2",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441755",
+      "schema:name": "party1b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441764",
+      "schema:name": "party2b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441783",
+      "schema:name": "party3b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441779",
+      "schema:name": "party4b",
+      "schema:description": "party4b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441751",
+      "schema:name": "party5b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441778",
+      "schema:name": "party6b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441750",
+      "schema:name": "party7b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441782",
+      "schema:name": "party8b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441766",
+      "schema:name": "party9b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441770",
+      "schema:name": "party10b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441771",
+      "schema:name": "party11b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441752",
+      "schema:name": "party12b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441785",
+      "schema:name": "party13b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v2441772",
+      "schema:name": "party14b",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.7910/DVN/EZNWPA#metadata",
+    "schema:name": "Metadata record for: Replication data for: Expert Interpretations of Party Space and Party Locations in 42 Societies",
+    "schema:about": {
+      "@id": "https://doi.org/10.7910/DVN/EZNWPA"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/data_description/1.0"
+      }
+    ],
+    "schema:description": "Converted from DDI Codebook 2.5 to CDIF DataDescription profile by Claude Code. Variable descriptions mapped from DDI <var> elements to schema:variableMeasured with cdi:InstanceVariable extensions. DDI varFormat mapped to cdi:intendedDataType, DDI intrvl mapped to cdi:role (contin->MeasureComponent, discrete->AttributeComponent). Summary statistics (min/max) preserved."
+  }
+}
