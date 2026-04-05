@@ -6,185 +6,162 @@
     "spdx": "http://spdx.org/rdf/terms#",
     "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
     "csvw": "http://www.w3.org/ns/csvw#",
-    "ex": "https://example.org/",
+    "cdifq": "http://crossdomaininteroperability.org/cdifq/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "dcat": "http://www.w3.org/ns/dcat#",
     "prov": "http://www.w3.org/ns/prov#"
   },
-  "@id": "ex:YOPx",
+  "@id": "https://doi.org/10.5281/zenodo.example.8834521",
   "@type": [
     "schema:Dataset"
   ],
-  "schema:name": "Test dataset",
-  "schema:description": "Auto generated from JSON schema, values are gobbledegoop. For testing",
+  "schema:name": "Major and Trace Element Geochemistry of Volcanic Rocks from the Cascadia Subduction Zone",
+  "schema:description": "Whole-rock major and trace element geochemical analyses of volcanic rocks collected from Quaternary volcanic centers along the Cascadia subduction zone, Pacific Northwest USA. Samples were collected during field campaigns in 2018-2022 from Mount St. Helens, Mount Adams, Mount Hood, and Crater Lake. Major elements determined by X-ray fluorescence (XRF) spectrometry; trace elements by inductively coupled plasma mass spectrometry (ICP-MS). Data include sample locations, rock classifications, and analytical results with detection limits and measurement uncertainties.",
   "schema:additionalType": [
-    "test data description"
+    "geochemistry dataset"
   ],
   "schema:identifier": {
     "@type": [
       "schema:PropertyValue"
     ],
-    "schema:propertyID": "uSNzhqeEQPKhCj",
-    "schema:url": "http://identifiers.org/sandbox/uSNzhqeEQPKhCj"
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:value": "10.5281/zenodo.example.8834521",
+    "schema:url": "https://doi.org/10.5281/zenodo.example.8834521"
   },
   "schema:sameAs": [
     {
       "@type": [
         "schema:PropertyValue"
       ],
-      "schema:propertyID": "urn:idorg:test",
-      "schema:value": "urn:idorg:test:p45689"
+      "schema:propertyID": "https://www.earthchem.org/ecl",
+      "schema:value": "ecl:2024-0847"
     }
   ],
-  "schema:version": "OVVAYgJhmFkXyVyedlVo",
-  "schema:url": "http://example.com/resource?foo=bar#fragment",
-  "schema:inLanguage": "bYiJT",
-  "schema:dateModified": "2020-10-15",
-  "schema:datePublished": "2021-09-05",
+  "schema:version": "2.1",
+  "schema:url": "https://doi.org/10.5281/zenodo.example.8834521",
+  "schema:inLanguage": "en",
+  "schema:dateModified": "2024-08-15",
+  "schema:datePublished": "2024-03-22",
   "schema:conditionsOfAccess": [
-    "ihYojbwJyw",
-    "jNv",
-    "LCY",
-    "tfmbDGeiuEnuhfKBvk"
+    "Data are freely available for non-commercial research use. Commercial use requires written permission from the authors."
   ],
   "schema:license": [
-    "dXhuFoqL",
-    "Kmp"
+    "https://creativecommons.org/licenses/by/4.0/"
   ],
   "schema:relatedLink": [
     {
       "@type": [
         "schema:LinkRole"
       ],
-      "schema:linkRelationship": "lfCzUaoftdtTPAhMnpC",
+      "schema:linkRelationship": "companion publication",
       "target": {
         "@type": [
           "schema:EntryPoint"
         ],
-        "schema:encodingFormat": "gompgHAN",
-        "schema:name": "oAuxEutsTEiB",
-        "schema:url": "http://example.com/resource?foo=bar#fragment"
+        "schema:encodingFormat": "text/html",
+        "schema:name": "Johnson et al. (2024) Petrogenesis of Cascadia arc magmas",
+        "schema:url": "https://doi.org/10.1029/2024JB028456"
       }
     },
     {
       "@type": [
         "schema:LinkRole"
       ],
-      "schema:linkRelationship": "BOoRREnpDEUrdNaV",
+      "schema:linkRelationship": "related dataset",
       "target": {
         "@type": [
           "schema:EntryPoint"
         ],
-        "schema:encodingFormat": "FNoslhw",
-        "schema:name": "atsDYJxuhHpivqLmw",
-        "schema:url": "http://example.com/resource?foo=bar#fragment"
+        "schema:encodingFormat": "application/json",
+        "schema:name": "GEOROC Cascadia volcanic rock compilation",
+        "schema:url": "https://georoc.eu/georoc/new-start.asp?loc=Cascadia"
       }
     }
   ],
   "schema:publishingPrinciples": [
-    "rxZsrPAbJrIGGgDVJ"
+    "Data are versioned; corrections and additions are published as new versions with changelog. Data are immutable once published; errata are documented in supplementary notes."
   ],
   "schema:keywords": [
     {
       "@type": [
         "schema:DefinedTerm"
       ],
-      "schema:name": "MiSqvcp",
+      "schema:name": "geochemistry",
       "schema:identifier": {
         "@type": [
           "schema:PropertyValue"
         ],
-        "schema:propertyID": "ex:rIPXjaCPQX",
-        "schema:value": "PVSajGtBPsLzeCTLv",
-        "schema:url": "http://example.com/resource/PVSajGtBPsLzeCTLvt"
+        "schema:propertyID": "https://gcmd.earthdata.nasa.gov/kms",
+        "schema:value": "EARTH SCIENCE > SOLID EARTH > GEOCHEMISTRY",
+        "schema:url": "https://gcmd.earthdata.nasa.gov/kms/concept/6e7e53db-e596-4a98-be2f-392690684be6"
       },
-      "schema:inDefinedTermSet": "EfagQEQtAkwMBDvfKznc",
-      "schema:termCode": "bzOl"
+      "schema:inDefinedTermSet": "NASA GCMD Science Keywords",
+      "schema:termCode": "6e7e53db"
     },
     {
       "@type": [
         "schema:DefinedTerm"
       ],
-      "schema:name": "TiMuawt",
+      "schema:name": "volcanic rocks",
       "schema:identifier": {
         "@type": [
           "schema:PropertyValue"
         ],
-        "schema:propertyID": "https://resource.org/identifier",
-        "schema:value": "tdUMYBItIwdJe",
-        "schema:url": "http://example.com/resource/tdUMYBItIwdJe"
+        "schema:propertyID": "https://www.wikidata.org/wiki/Property:P279",
+        "schema:value": "Q190643",
+        "schema:url": "https://www.wikidata.org/wiki/Q190643"
       },
-      "schema:inDefinedTermSet": "sqH",
-      "schema:termCode": "RUUxHY"
+      "schema:inDefinedTermSet": "Wikidata",
+      "schema:termCode": "Q190643"
     }
   ],
   "schema:creator": {
     "@list": [
       {
-        "@id": "ex:mxxInaV",
+        "@id": "https://orcid.org/0000-0002-1234-5678",
         "@type": [
-          "schema:Organization"
+          "schema:Person"
         ],
-        "schema:name": "AEbcNvM",
-        "schema:alternateName": "MwsoNGVEp",
+        "schema:name": "Johnson, Emily R.",
         "schema:affiliation": {
-          "@id": "ex:xblzSwEYJKBPpkK",
+          "@id": "https://ror.org/00cvxb145",
           "@type": [
             "schema:Organization"
           ],
-          "schema:additionalType": [
-            "schema:GovernmentOrganization",
-            "schema:ResearchOrganization",
-            "schema:ResearchOrganization",
-            "schema:Project"
-          ],
-          "schema:name": "mDjEBamofgiqGBqfQGfe",
-          "schema:alternateName": "TrAuXgjTOCmJVTaf",
-          "schema:description": "wwcOQoCbUe",
+          "schema:name": "University of Oregon",
           "schema:identifier": {
             "@type": [
               "schema:PropertyValue"
             ],
-            "schema:propertyID": "oyvigoDvYFCGEkFc",
-            "schema:value": "tMxtQyCUFptzpXj",
-            "schema:url": "http://example.com/resource?foo=bar#fragment"
-          },
-          "schema:sameAs": [
-            "K",
-            "AsoXEfDoLipcJw"
-          ]
+            "schema:propertyID": "https://registry.identifiers.org/registry/ror",
+            "schema:value": "00cvxb145",
+            "schema:url": "https://ror.org/00cvxb145"
+          }
         },
         "schema:contactPoint": {
           "@type": [
             "schema:ContactPoint"
           ],
-          "schema:email": "tready@email.ocm"
-        },
-        "schema:description": "ypZ",
-        "schema:identifier": {
-          "@type": [
-            "schema:PropertyValue"
-          ],
-          "schema:propertyID": "ciZyuOzfhVSPdWi",
-          "schema:value": "JqLmJhoyFPhsmW",
-          "schema:url": "http://example.com/resource?foo=bar#fragment"
-        },
-        "schema:sameAs": [
-          "ex:pMPylNhiMvfC",
-          "ex:IgH"
-        ]
+          "schema:email": "erjohnson@uoregon.edu"
+        }
       },
       {
-        "@id": "ex:jP",
+        "@id": "https://orcid.org/0000-0003-8765-4321",
         "@type": [
           "schema:Person"
         ],
-        "schema:name": "Doe, Jane",
+        "schema:name": "Chen, Wei-Lin",
+        "schema:affiliation": {
+          "@type": [
+            "schema:Organization"
+          ],
+          "schema:name": "USGS Cascades Volcano Observatory"
+        },
         "schema:contactPoint": {
           "@type": [
             "schema:ContactPoint"
           ],
-          "schema:email": "jdoe@example.org"
+          "schema:email": "wchen@usgs.gov"
         }
       }
     ]
@@ -196,51 +173,34 @@
       ],
       "schema:roleName": "editor",
       "schema:contributor": {
-        "@id": "ex:PersonExample_zZc_asContributor",
+        "@id": "https://orcid.org/0000-0001-9876-5432",
         "@type": [
           "schema:Person"
         ],
-        "schema:name": "Joe B. Test",
-        "schema:alternateName": "Test, J. B.",
+        "schema:name": "Martinez, Carlos A.",
         "schema:affiliation": {
           "@type": [
             "schema:Organization"
           ],
-          "schema:name": "The Big Manufacturing Co."
+          "schema:name": "EarthChem / IEDA"
         },
-        "schema:description": "Metadata specialist, based in Portland, Maine",
-        "schema:identifier": {
-          "@type": [
-            "schema:PropertyValue"
-          ],
-          "schema:propertyID": "https://orcid.org",
-          "schema:value": "iY",
-          "schema:url": "https://orcid.org/iY"
-        },
+        "schema:description": "Data quality review and standardization",
         "schema:contactPoint": {
           "@type": [
             "schema:ContactPoint"
           ],
-          "schema:email": "joe@bmanuco.org"
-        },
-        "schema:sameAs": [
-          "https://ark.org/46737",
-          "uri:test:43737"
-        ]
+          "schema:email": "cmartinez@earthchem.org"
+        }
       }
-    },
-    {
-      "@id": "ex:NyMWPlRtQizAFE"
     }
   ],
   "schema:publisher": {
-    "@id": "ex:exampleOrg_fW",
+    "@id": "https://ror.org/03m2x1q45",
     "@type": [
       "schema:Organization"
     ],
     "schema:additionalType": [
-      "schema:ResearchOrganization",
-      "university"
+      "schema:ResearchOrganization"
     ],
     "schema:name": "University of Arizona",
     "schema:alternateName": "UAz",
@@ -252,37 +212,22 @@
       "schema:propertyID": "https://registry.identifiers.org/registry/ror",
       "schema:value": "03m2x1q45",
       "schema:url": "https://ror.org/03m2x1q45"
-    },
-    "schema:sameAs": [
-      "Wildcats"
-    ]
+    }
   },
   "schema:provider": [
     {
-      "@id": "ex:gDiAxjl",
+      "@id": "https://ror.org/05dxps526",
       "@type": [
         "schema:Organization"
       ],
-      "schema:name": "Example Data Center"
+      "schema:name": "Columbia University / IEDA"
     },
     {
-      "@id": "ex:ihjJtFPNEKnGSFBcgS",
+      "@id": "https://orcid.org/0000-0001-6113-5417",
       "@type": [
         "schema:Person"
       ],
-      "schema:name": "Smith, Robert",
-      "schema:contactPoint": {
-        "@type": [
-          "schema:ContactPoint"
-        ],
-        "schema:email": "rsmith@example.org"
-      }
-    },
-    {
-      "@id": "https://ada.org/person/5489",
-      "@type": [
-        "schema:Person"
-      ],
+      "schema:name": "King, Ashley",
       "schema:contactPoint": {
         "@type": [
           "schema:ContactPoint"
@@ -296,8 +241,7 @@
         "schema:propertyID": "https://orcid.org",
         "schema:value": "0000-0001-6113-5417",
         "schema:url": "https://orcid.org/0000-0001-6113-5417"
-      },
-      "schema:name": "King, Ashley"
+      }
     }
   ],
   "schema:funding": [
@@ -309,177 +253,65 @@
         "@type": [
           "schema:PropertyValue"
         ],
-        "schema:propertyID": "grant-id",
-        "schema:value": "lieopgXuumP"
+        "schema:propertyID": "https://www.nsf.gov/awardsearch",
+        "schema:value": "EAR-2134567"
       },
-      "schema:name": "fhhbzh",
+      "schema:name": "Magma genesis and differentiation in the Cascadia arc",
       "schema:funder": {
-        "@id": "https://ror.org/3572wjht"
+        "@id": "https://ror.org/021nxhr62",
+        "@type": [
+          "schema:Organization"
+        ],
+        "schema:name": "National Science Foundation"
       }
+    }
+  ],
+  "schema:spatialCoverage": [
+    {
+      "@type": [
+        "schema:Place"
+      ],
+      "schema:name": "Cascadia Subduction Zone, Pacific Northwest USA",
+      "schema:geo": {
+        "@type": [
+          "schema:GeoShape"
+        ],
+        "schema:box": "42.0 -123.5 47.0 -120.5"
+      }
+    }
+  ],
+  "schema:temporalCoverage": [
+    "2018-06-15/2022-09-30"
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "X-ray fluorescence spectrometry",
+      "schema:termCode": "XRF"
     },
     {
       "@type": [
-        "schema:MonetaryGrant"
+        "schema:DefinedTerm"
       ],
-      "schema:identifier": {
-        "@type": [
-          "schema:PropertyValue"
-        ],
-        "schema:propertyID": "grant-id",
-        "schema:value": "fMuiBjneudpV"
-      },
-      "schema:name": "MWoPQAqRYHobey",
-      "schema:funder": {
-        "@id": "https://ror.org/fnjrj68"
-      }
-    },
-    {
-      "@type": [
-        "schema:MonetaryGrant"
-      ],
-      "schema:identifier": {
-        "@type": [
-          "schema:PropertyValue"
-        ],
-        "schema:propertyID": "grant-id",
-        "schema:value": "LZpo"
-      },
-      "schema:name": "ekckpBtI",
-      "schema:funder": {
-        "@id": "https://ror.org/sejer4w6u8"
-      }
+      "schema:name": "Inductively coupled plasma mass spectrometry",
+      "schema:termCode": "ICP-MS"
     }
   ],
   "schema:distribution": [
     {
       "@type": [
-        "schema:DataDownload"
-      ],
-      "schema:name": "VwuIdrCrJSsrGATePg",
-      "schema:contentUrl": "http://example.com/resource?foo=bar#fragment",
-      "schema:encodingFormat": [
-        "text/csv"
-      ],
-      "spdx:checksum": {
-        "@type": [
-          "spdx:Checksum"
-        ],
-        "spdx:algorithm": "MD5",
-        "spdx:checksumValue": "MITGLcmBjeFYWmjP"
-      },
-      "schema:provider": [
-        {
-          "@id": "ex:ABYcNWHKYhTiLLNEzJx",
-          "@type": [
-            "schema:Person"
-          ],
-          "schema:name": "Walker, Longin",
-          "schema:alternateName": "LWH",
-          "schema:affiliation": {
-            "@id": "ex:corzCgjNrGcH",
-            "@type": [
-              "schema:Organization"
-            ],
-            "schema:additionalType": [
-              "schema:NGO"
-            ],
-            "schema:name": "Some Data Repository",
-            "schema:alternateName": "leJqYoxQIH",
-            "schema:description": "vRzzUAmtNWLgZcgNIC",
-            "schema:identifier": {
-              "@type": [
-                "schema:PropertyValue"
-              ],
-              "schema:propertyID": "KSgJJfyAuQPEX",
-              "schema:value": "iFSyBdjVAxHmFOZVFg"
-            },
-            "schema:sameAs": [
-              "ex:ITXGFU",
-              "urn:test:WWcBivQCAO"
-            ]
-          },
-          "schema:contactPoint": {
-            "@type": [
-              "schema:ContactPoint"
-            ],
-            "schema:email": "tom@ngo.net"
-          },
-          "schema:description": "Data Curator",
-          "schema:identifier": {
-            "@type": [
-              "schema:PropertyValue"
-            ],
-            "schema:propertyID": "https://identifiers.org/orcid",
-            "schema:value": "NfaMinUfHeMDEFNc",
-            "schema:url": "http://orcid.org/NfaMinUfHeMDEFNc"
-          }
-        }
-      ],
-      "dcterms:conformsTo": [
-        {
-          "@id": "http://www.opengis.net/def/nil/OGC/0/missing"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "schema:DataDownload"
-      ],
-      "schema:name": "MVMpmnCGAggEnsoEgJXH",
-      "schema:contentUrl": "http://example.com/resource?foo=bar#fragment",
-      "schema:encodingFormat": [
-        "tNdpXaJgDeWbFkNM",
-        "kpZDvhyVo",
-        "sMUGwSqxWzJOYEb"
-      ],
-      "spdx:checksum": {
-        "@type": [
-          "spdx:Checksum"
-        ],
-        "spdx:algorithm": "j",
-        "spdx:checksumValue": "h"
-      },
-      "schema:provider": [
-        {
-          "@id": "kNKPZsCSWMc",
-          "@type": [
-            "schema:Organization"
-          ],
-          "schema:name": "SdeMvoPFxEaJOvQy",
-          "schema:alternateName": "WFcslOjvGZY",
-          "schema:description": "ztcLdOAkQTKSPLZ",
-          "schema:identifier": {
-            "@type": [
-              "schema:PropertyValue"
-            ],
-            "schema:propertyID": "ex:oFIYAymjuGCPjDnSgmB",
-            "schema:url": "http://example.com/resource/WPfhCJyxiDcwgdHMemJd"
-          }
-        },
-        {
-          "@id": "ex:sr68lgy",
-          "@type": [
-            "schema:Organization"
-          ],
-          "schema:name": "Another Provider Org"
-        }
-      ],
-      "dcterms:conformsTo": [
-        {
-          "@id": "http://www.opengis.net/def/nil/OGC/0/missing"
-        }
-      ]
-    },
-    {
-      "@type": [
         "schema:DataDownload",
         "cdi:TabularTextDataSet"
       ],
-      "schema:name": "Geochemistry analysis results",
-      "schema:contentUrl": "http://example.com/data/geochem-results.csv",
+      "schema:name": "cascadia-geochem-major-elements.csv",
+      "schema:description": "Major element oxide concentrations (wt%) for 461 volcanic rock samples, determined by XRF",
+      "schema:contentUrl": "https://doi.org/10.5281/zenodo.example.8834521/files/cascadia-geochem-major-elements.csv",
       "schema:encodingFormat": [
         "text/csv"
       ],
+      "schema:contentSize": "245760",
       "spdx:checksum": {
         "@type": [
           "spdx:Checksum"
@@ -491,39 +323,29 @@
       "csvw:delimiter": ",",
       "csvw:header": true,
       "csvw:headerRowCount": 1,
-      "csvw:commentPrefix": "#",
-      "csvw:skipRows": 0,
-      "csvw:skipBlankRows": true,
-      "csvw:quoteChar": "\"",
-      "countRows": 461,
-      "countColumns": 2,
+      "cdifq:nRows": 461,
+      "cdifq:nColumns": 2,
       "cdi:hasPhysicalMapping": [
         {
           "cdi:index": 0,
-          "cdi:format": "decimal",
-          "cdi:physicalDataType": "float64",
-          "cdi:nullSequence": "NA",
-          "cdi:isRequired": true,
+          "schema:name": "SiO2_wt_pct",
+          "cdi:physicalDataType": "xsd:decimal",
           "cdi:formats_InstanceVariable": {
-            "@id": "ex:KJTFKurNFu"
+            "@id": "#var-SiO2"
           }
         },
         {
           "cdi:index": 1,
-          "cdi:format": "decimal",
-          "cdi:physicalDataType": "float64",
-          "cdi:nullSequence": "-9999",
-          "cdi:defaultValue": "0.0",
-          "cdi:decimalPositions": 4,
-          "cdi:isRequired": false,
+          "schema:name": "Al2O3_wt_pct",
+          "cdi:physicalDataType": "xsd:decimal",
           "cdi:formats_InstanceVariable": {
-            "@id": "ex:OjHgIDO"
+            "@id": "#var-Al2O3"
           }
         }
       ],
       "dcterms:conformsTo": [
         {
-          "@id": "http://www.opengis.net/def/nil/OGC/0/missing"
+          "@id": "https://www.earthchem.org/ecl/standards/geochem-csv-v2"
         }
       ]
     },
@@ -532,11 +354,13 @@
         "schema:DataDownload",
         "cdi:StructuredDataSet"
       ],
-      "schema:name": "Gridded measurement data cube",
-      "schema:contentUrl": "http://example.com/data/measurement-cube.nc",
+      "schema:name": "cascadia-geochem-gridded.nc",
+      "schema:description": "Gridded interpolation of SiO2 and Al2O3 across the Cascadia arc, 0.1-degree resolution NetCDF",
+      "schema:contentUrl": "https://doi.org/10.5281/zenodo.example.8834521/files/cascadia-geochem-gridded.nc",
       "schema:encodingFormat": [
         "application/x-netcdf"
       ],
+      "schema:contentSize": "15728640",
       "spdx:checksum": {
         "@type": [
           "spdx:Checksum"
@@ -547,31 +371,21 @@
       "cdi:hasPhysicalMapping": [
         {
           "cdi:index": 0,
-          "cdi:format": "decimal",
-          "cdi:physicalDataType": "float32",
-          "cdi:locator": "/measurements/wavelength",
-          "cdi:nullSequence": "NaN",
-          "cdi:isRequired": true,
+          "schema:name": "SiO2",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:locator": "/geochemistry/SiO2",
           "cdi:formats_InstanceVariable": {
-            "@id": "ex:KJTFKurNFu"
+            "@id": "#var-SiO2"
           }
         },
         {
           "cdi:index": 1,
-          "cdi:format": "decimal",
-          "cdi:physicalDataType": "float32",
-          "cdi:locator": "/measurements/intensity",
-          "cdi:scale": 1000,
-          "cdi:decimalPositions": 6,
-          "cdi:isRequired": true,
+          "schema:name": "Al2O3",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:locator": "/geochemistry/Al2O3",
           "cdi:formats_InstanceVariable": {
-            "@id": "ex:OjHgIDO"
+            "@id": "#var-Al2O3"
           }
-        }
-      ],
-      "dcterms:conformsTo": [
-        {
-          "@id": "http://www.opengis.net/def/nil/OGC/0/missing"
         }
       ]
     },
@@ -600,21 +414,21 @@
         "@type": [
           "schema:CreativeWork"
         ],
-        "schema:name": "OpenAPI specification for geochemistry data service",
-        "schema:url": "http://example.com/api/v1/openapi.json"
+        "schema:name": "OpenAPI specification for Cascadia geochemistry data service",
+        "schema:url": "https://example.org/api/v1/openapi.json"
       },
       "schema:potentialAction": [
         {
           "@type": [
             "schema:Action"
           ],
-          "schema:name": "Query geochemistry features",
+          "schema:name": "Query geochemistry by location and composition",
           "schema:target": {
             "@type": [
               "schema:EntryPoint"
             ],
-            "schema:description": "OGC API Features endpoint returning geochemistry observations as CSV",
-            "schema:urlTemplate": "http://example.com/api/v1/collections/geochem/items?f={format}&limit={limit}&offset={offset}",
+            "schema:description": "OGC API Features endpoint returning geochemistry observations filtered by bounding box and oxide range",
+            "schema:urlTemplate": "https://example.org/api/v1/collections/cascadia-geochem/items?f={format}&limit={limit}&bbox={bbox}&SiO2_min={SiO2_min}&SiO2_max={SiO2_max}",
             "schema:httpMethod": [
               "GET"
             ],
@@ -628,45 +442,9 @@
               "schema:DataDownload"
             ],
             "schema:name": "Geochemistry query results",
-            "schema:contentUrl": "http://example.com/api/v1/collections/geochem/items?f=csv",
             "schema:encodingFormat": [
               "text/csv"
-            ],
-            "cdi:isDelimited": true,
-            "csvw:delimiter": ",",
-            "csvw:header": true,
-            "csvw:headerRowCount": 1,
-            "cdi:hasPhysicalMapping": [
-              {
-                "cdi:index": 0,
-                "cdi:format": "decimal",
-                "cdi:physicalDataType": "float64",
-                "cdi:isRequired": true,
-                "cdi:formats_InstanceVariable": {
-                  "@id": "ex:KJTFKurNFu"
-                }
-              },
-              {
-                "cdi:index": 1,
-                "cdi:format": "decimal",
-                "cdi:physicalDataType": "float64",
-                "cdi:isRequired": false,
-                "cdi:formats_InstanceVariable": {
-                  "@id": "ex:OjHgIDO"
-                }
-              }
-            ],
-            "dcterms:conformsTo": [
-              {
-                "@id": "http://www.opengis.net/def/nil/OGC/0/missing"
-              }
             ]
-          },
-          "schema:object": {
-            "@type": [
-              "schema:DataFeed"
-            ],
-            "schema:description": "Geochemistry observations collection"
           },
           "schema:query-input": [
             {
@@ -683,15 +461,31 @@
                 "schema:PropertyValueSpecification"
               ],
               "schema:valueName": "limit",
-              "schema:description": "Maximum number of features to return (default 100)",
+              "schema:description": "Maximum number of features to return (default 100, max 10000)",
               "schema:valueRequired": false
             },
             {
               "@type": [
                 "schema:PropertyValueSpecification"
               ],
-              "schema:valueName": "offset",
-              "schema:description": "Starting index for pagination",
+              "schema:valueName": "bbox",
+              "schema:description": "Bounding box filter as minLon,minLat,maxLon,maxLat in WGS84",
+              "schema:valueRequired": false
+            },
+            {
+              "@type": [
+                "schema:PropertyValueSpecification"
+              ],
+              "schema:valueName": "SiO2_min",
+              "schema:description": "Minimum SiO2 content (wt%) for filtering",
+              "schema:valueRequired": false
+            },
+            {
+              "@type": [
+                "schema:PropertyValueSpecification"
+              ],
+              "schema:valueName": "SiO2_max",
+              "schema:description": "Maximum SiO2 content (wt%) for filtering",
               "schema:valueRequired": false
             }
           ]
@@ -705,21 +499,22 @@
         "schema:PropertyValue",
         "cdi:InstanceVariable"
       ],
-      "@id": "ex:KJTFKurNFu",
-      "schema:name": "RbMivCtraTmzms",
-      "schema:description": "EcbPmKQnMCgWozw",
+      "@id": "#var-SiO2",
+      "schema:name": "SiO2_wt_pct",
+      "schema:description": "Silicon dioxide concentration in weight percent, determined by X-ray fluorescence spectrometry on fused glass beads",
       "schema:propertyID": [
-        "urn:test:GigjbPysIJ",
-        "https://ark.org/bXEOCTwvICRc"
+        "https://www.wikidata.org/wiki/Q116269",
+        "https://chem.nlm.nih.gov/chemidplus/sid/0007631869"
       ],
-      "schema:measurementTechnique": "some measurement technique",
-      "schema:unitText": "furlongs",
-      "schema:unitCode": "F",
-      "schema:minValue": 67.0,
-      "schema:maxValue": 98.0,
-      "schema:url": "http://example.com/resource?foo=bar#furlong",
+      "schema:measurementTechnique": "X-ray fluorescence spectrometry (XRF)",
+      "schema:unitText": "weight percent",
+      "schema:unitCode": "P1",
+      "schema:minValue": 45.2,
+      "schema:maxValue": 77.8,
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
       "cdi:physicalDataType": [
-        "float64"
+        "xsd:decimal"
       ]
     },
     {
@@ -727,36 +522,37 @@
         "schema:PropertyValue",
         "cdi:InstanceVariable"
       ],
-      "@id": "ex:OjHgIDO",
-      "schema:name": "jzgZCegiTFYBSmsSh",
-      "schema:description": "RGKBMBkScTTNQ",
+      "@id": "#var-Al2O3",
+      "schema:name": "Al2O3_wt_pct",
+      "schema:description": "Aluminium oxide concentration in weight percent, determined by X-ray fluorescence spectrometry on fused glass beads",
       "schema:propertyID": [
-        "urn:properties:tzysaGTv",
-        "ex:CUXfWZLdRkEAG"
+        "https://www.wikidata.org/wiki/Q190463",
+        "https://chem.nlm.nih.gov/chemidplus/sid/0001344281"
       ],
       "schema:measurementTechnique": {
         "@type": [
           "schema:DefinedTerm"
         ],
-        "schema:name": "a good technique",
+        "schema:name": "X-ray fluorescence spectrometry",
         "schema:identifier": {
           "@type": [
             "schema:PropertyValue"
           ],
-          "schema:propertyID": "https://identifiers.org",
-          "schema:value": "igcJkZMJiKehgkPjMCp",
-          "schema:url": "https://identifiers.org/technique/igcJkZMJiKehgkPjMCp"
+          "schema:propertyID": "https://purls.helmholtz-metadaten.de/amt",
+          "schema:value": "XRF",
+          "schema:url": "https://purls.helmholtz-metadaten.de/amt/xrf"
         },
-        "schema:inDefinedTermSet": "https://identifiers.org/technique/vocabulary",
-        "schema:termCode": "agt"
+        "schema:inDefinedTermSet": "Helmholtz Analytical Methods Thesaurus",
+        "schema:termCode": "XRF"
       },
-      "schema:unitText": "stone",
-      "schema:unitCode": "S",
-      "schema:minValue": 36.0,
-      "schema:maxValue": 74.0,
-      "schema:url": "http://example.com/resource?foo=bar#stone",
+      "schema:unitText": "weight percent",
+      "schema:unitCode": "P1",
+      "schema:minValue": 12.1,
+      "schema:maxValue": 21.4,
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
       "cdi:physicalDataType": [
-        "float32"
+        "xsd:decimal"
       ]
     }
   ],
@@ -767,9 +563,9 @@
     "schema:additionalType": [
       "dcat:CatalogRecord"
     ],
-    "@id": "ex:BAaR",
+    "@id": "https://doi.org/10.5281/zenodo.example.8834521#metadata",
     "schema:about": {
-      "@id": "ex:YOPx"
+      "@id": "https://doi.org/10.5281/zenodo.example.8834521"
     },
     "dcterms:conformsTo": [
       {
@@ -783,58 +579,32 @@
       }
     ],
     "schema:maintainer": {
-      "@id": "ex:PersonExample_zZc",
+      "@id": "https://orcid.org/0000-0001-9876-5432",
       "@type": [
         "schema:Person"
       ],
-      "schema:name": "Joe Test",
-      "schema:alternateName": "Test, Joe",
+      "schema:name": "Martinez, Carlos A.",
       "schema:affiliation": {
-        "@id": "ex:maintainerAffiliation_3456",
         "@type": [
           "schema:Organization"
         ],
-        "schema:name": "Test organization"
-      },
-      "schema:description": "Metadata specialist, based in Portland, Maine",
-      "schema:identifier": {
-        "@id": "ex:maintainerIdentifier_3456",
-        "@type": [
-          "schema:PropertyValue"
-        ],
-        "schema:propertyID": "https://doi.org",
-        "schema:value": "iY",
-        "schema:url": "https://doi.org/iY"
+        "schema:name": "EarthChem / IEDA"
       },
       "schema:contactPoint": {
-        "@id": "ex:maintainerContactPoint_3456",
         "@type": [
           "schema:ContactPoint"
         ],
-        "schema:email": "joe@bmanuco.org"
-      },
-      "schema:sameAs": [
-        "https://ark.org/46737",
-        "uri:test:43737"
-      ]
+        "schema:email": "cmartinez@earthchem.org"
+      }
     },
-    "schema:sdDatePublished": "2025-10-25",
+    "schema:sdDatePublished": "2024-08-15",
     "schema:includedInDataCatalog": {
-      "@id": "ex:lIZkH",
       "@type": [
         "schema:DataCatalog"
       ],
-      "schema:name": "naEEWHEjgvNFJy",
-      "schema:url": "http://example.com/resource?foo=bar#fragment",
-      "schema:identifier": {
-        "@type": [
-          "schema:PropertyValue"
-        ],
-        "schema:propertyID": "ex:fGSg",
-        "schema:value": "vPADlYJkJuGgI",
-        "schema:url": "http://example.com/resource?foo=bar#fragment"
-      }
+      "schema:name": "EarthChem Library",
+      "schema:url": "https://www.earthchem.org/library"
     },
-    "schema:description": "Simplified to DataDescription profile (no provenance extensions). Prov properties (prov:wasGeneratedBy, prov:wasDerivedFrom, etc.) removed. ConformsTo updated to core + discovery + data_description only."
+    "schema:description": "Synthetic CDIF DataDescription example demonstrating multiple distribution types (TabularTextDataSet CSV, StructuredDataSet NetCDF, WebAPI OGC Features), physical mappings, DDI-CDI variable descriptions, and full metadata provenance. Content is realistic but identifiers are illustrative."
   }
 }
