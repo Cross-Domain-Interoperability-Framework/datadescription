@@ -45,17 +45,50 @@
   "schema:distribution": [
     {
       "@type": [
-        "schema:DataDownload"
+        "schema:DataDownload",
+        "cdi:TabularTextDataSet"
       ],
-      "schema:contentUrl": "https://github.com/XraySpectroscopy/XASDataLibrary/blob/master/data/Se/Se_Na2SeO4_rt_01.xdi",
+      "schema:contentUrl": "https://raw.githubusercontent.com/XraySpectroscopy/XASDataLibrary/master/data/Se/Se_Na2SeO4_rt_01.xdi",
       "schema:description": "Distribution = PhysicalDataSet text file conformant with XDI specification",
-      "schema:contentSize": "30 kb",
+      "schema:contentSize": "18789",
       "schema:encodingFormat": [
-        "text/plain"
+        "application/x-xdi"
       ],
       "dcterms:conformsTo": [
         {
           "@id": "https://github.com/XraySpectroscopy/XAS-Data-Interchange/blob/master/specification/spec.md"
+        }
+      ],
+      "schema:name": "Se_Na2SeO4_rt_01.xdi",
+      "csvw:delimiter": "  ",
+      "csvw:header": true,
+      "csvw:headerRowCount": 27,
+      "cdifq:nRows": 469,
+      "cdifq:nColumns": 3,
+      "cdi:hasPhysicalMapping": [
+        {
+          "cdi:index": 0,
+          "schema:name": "energy",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "xas:monochromatorEnergyVariable"
+          }
+        },
+        {
+          "cdi:index": 1,
+          "schema:name": "itrans",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "xas:transmittedIntensityVariable"
+          }
+        },
+        {
+          "cdi:index": 2,
+          "schema:name": "i0",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "xas:incidentIntensityVariable"
+          }
         }
       ]
     }
@@ -209,6 +242,6 @@
         "@id": "https://w3id.org/cdif/data_description/1.0"
       }
     ],
-    "schema:description": "Simplified to DataDescription profile from validation MetadataExamples. Provenance extensions removed. Structural fixes applied for CDIF conformance."
+    "schema:description": "Simplified to DataDescription profile from validation MetadataExamples. Provenance extensions removed. Structural fixes applied for CDIF conformance. Distribution updated to cdi:TabularTextDataSet with physical mappings from XDI file column headers (row 27: energy, itrans, i0). File dimensions (469 rows x 3 columns) and size (18789 bytes) from downloaded file."
   }
 }
