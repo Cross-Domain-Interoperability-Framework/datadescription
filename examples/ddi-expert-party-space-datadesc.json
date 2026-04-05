@@ -838,6 +838,13 @@
         "@id": "https://w3id.org/cdif/data_description/1.0"
       }
     ],
-    "schema:description": "Converted from DDI Codebook 2.5 to CDIF DataDescription profile by Claude Code. Variable descriptions mapped from DDI <var> elements to schema:variableMeasured with cdi:InstanceVariable extensions. DDI varFormat mapped to cdi:intendedDataType, DDI intrvl mapped to cdi:role (contin->MeasureComponent, discrete->AttributeComponent). Summary statistics (min/max) preserved."
+    "schema:description": "Metadata harvested from Harvard Dataverse DDI Codebook 2.5 export (doi:10.7910/DVN/EZNWPA, /api/datasets/export?exporter=ddi). Converted from DDI Codebook 2.5 to CDIF DataDescription profile by Claude Code. Variable descriptions mapped from DDI <var> elements to schema:variableMeasured with cdi:InstanceVariable extensions. DDI varFormat mapped to cdi:intendedDataType, DDI intrvl mapped to cdi:role (contin->MeasureComponent, discrete->AttributeComponent). Summary statistics (min/max) preserved.",
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "Harvard Dataverse",
+      "schema:url": "https://dataverse.harvard.edu/"
+    }
   }
 }
