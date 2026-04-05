@@ -12,77 +12,79 @@ Repository for the CDIF Data Description profile — extends the Discovery profi
 
 The Data Description profile composes cdifCore + CDIFDiscoveryProfile + additional constraints:
 
-- **`schema:variableMeasured`** items must have `@id` and are extended with DDI-CDI `cdi:InstanceVariable` properties (`cdi:physicalDataType`, `cdi:intendedDataType`, `cdi:role`, `cdi:uses`, `cdi:qualifies`)
-- **`schema:distribution`** items gain `cdi:characterSet`, `cdi:fileSize`, `cdi:fileSizeUofM` for file characterization
+- **`schema:variableMeasured`** items must have `@id` and `@type` including `cdi:InstanceVariable`, extended with DDI-CDI properties (`cdi:physicalDataType`, `cdi:intendedDataType`, `cdi:role`, `cdi:uses`, `cdi:qualifies`)
+- **`schema:distribution`** items can be typed as `cdi:TabularTextDataSet`, `cdi:LongStructureDataSet`, or `cdi:StructuredDataSet` with CSVW properties (`csvw:delimiter`, `csvw:header`, `csvw:headerRowCount`) and dimension counts (`cdifq:nRows`, `cdifq:nColumns`)
+- **`cdi:hasPhysicalMapping`** on distributions links physical columns to `variableMeasured` items via `cdi:formats_InstanceVariable` references with column indices and physical data types
+- **File characterization**: `cdi:characterSet`, `cdi:fileSize`, `cdi:fileSizeUofM`, `schema:contentSize`, `spdx:checksum`
 - **`dcterms:conformsTo`** must include `https://w3id.org/cdif/data_description/1.0` in addition to core and discovery
 
 ## Examples
 
-The `examples/` directory contains 6 validated JSON-LD examples at the DataDescription level (no provenance extensions):
+The `examples/` directory contains 7 validated JSON-LD examples at the DataDescription level. All use DataDescription-specific properties (not just Discovery-level metadata). Records that only had `cdi:InstanceVariable` typing without physical data types or mappings have been moved to Discovery or packaging repositories.
 
-| File | Domain | Variables | Key CDI content |
-|------|--------|-----------|-----------------|
-| `xas-na2so4-datadesc.json` | XAS spectroscopy | 3 | cdi:InstanceVariable, physicalDataType, uses, role |
-| `xrd-datadesc.json` | X-ray diffraction | 2 | cdi:InstanceVariable, physicalDataType, uses |
-| `general-datadesc.json` | GC-MS chemistry | 3 | cdi:InstanceVariable, physicalDataType |
-| `nwis-longdata-datadesc.json` | Water quality | CDI in dist | Long format with cdi:LongStructureDataSet, CSVW |
-| `cdif-datadesc-example.json` | General | 2 | cdi:InstanceVariable, measurement technique |
-| `exampleCDIFDataDescription.json` | General | 2 | Building block reference example |
+### DDI Codebook conversions (Harvard Dataverse)
+
+Converted from DDI Codebook 2.5 XML via `validation/DDI/ddi_to_cdif.py`. Tab file headers fetched from Dataverse to build physical mappings. File sizes and MD5 checksums from Dataverse file API.
+
+| File | Domain | Vars | Files | Rows | DD properties |
+|------|--------|------|-------|------|---------------|
+| `ddi-cost-of-cash-datadesc.json` | Economics | 75 | 3 | 1,256 | intendedDataType, role, hasPhysicalMapping, TabularTextDataSet, csvw, nRows/nColumns, checksum |
+| `ddi-expert-party-space-datadesc.json` | Political science | 74 | 2 | 401 | intendedDataType, role, hasPhysicalMapping, TabularTextDataSet, csvw, nRows/nColumns, checksum |
+| `ddi-zoonotic-disease-datadesc.json` | Climate & disease | 7 | 1 | 315 | intendedDataType, role, hasPhysicalMapping, TabularTextDataSet, csvw, nRows/nColumns, checksum |
+| `ddi-bird-monitoring-datadesc.json` | Biodiversity | 82 | 5 | 2,429 | intendedDataType, role, hasPhysicalMapping, TabularTextDataSet, csvw, nRows/nColumns, checksum |
+
+### Simplified from validation MetadataExamples
+
+Provenance extensions stripped; retain only DataDescription-specific properties.
+
+| File | Domain | DD properties |
+|------|--------|---------------|
+| `cdif-datadesc-example.json` | General | physicalDataType, hasPhysicalMapping, TabularTextDataSet, StructuredDataSet, csvw |
+| `nwis-longdata-datadesc.json` | Water quality | physicalDataType, role, hasPhysicalMapping, LongStructureDataSet, csvw |
+| `xas-na2so4-datadesc.json` | XAS spectroscopy | physicalDataType, uses |
 
 All validated against CDIFDataDescriptionProfile structured schema.
 
-## Sources of variable-level metadata for examples
+## Sources of variable-level metadata
 
-An investigation of repositories that could provide variable-level metadata for DataDescription examples (April 2026):
+Investigation of repositories for variable-level metadata (April 2026):
 
 | Source | Variable-level DDI? | Notes |
 |--------|---------------------|-------|
-| **Harvard Dataverse** | **Yes** | DDI export (`/api/datasets/export?exporter=ddi`) includes full `<dataDscr>` with variable names, labels, formats, categories for ingested .tab files |
-| **Borealis Dataverse** | No | DDI export available but no variable descriptions (shapefiles, not ingested tabular) |
-| **SND / researchdata.se** | No | Study-level only in all formats: DDI Codebook 2.5, DDI Lifecycle 3.3, JSON-LD, REST API. Reports `variableQuantity` but doesn't expose variable list |
-| **CESSDA Data Catalogue** | No | OAI-PMH DDI 2.5 is study-level only — no `<dataDscr>` section |
+| **Harvard Dataverse** | **Yes** | DDI export includes full `<dataDscr>` with variable names, labels, formats, categories for ingested .tab files |
+| **Borealis Dataverse** | No | DDI export available but no variable descriptions |
+| **SND / researchdata.se** | No | Study-level only in all formats (DDI 2.5, DDI 3.3, JSON-LD). Reports `variableQuantity` but doesn't expose variable list |
+| **CESSDA Data Catalogue** | No | OAI-PMH DDI 2.5 is study-level only |
 | **UK Data Service** | No | DDI via OAI-PMH has no `<dataDscr>` section |
-| **GESIS** | Inaccessible | Has JSON-LD on landing pages but API blocked by SPA; direct DDI download returns empty |
-| **ICPSR** | Inaccessible | Cloudflare bot protection blocks programmatic access |
-| **PANGAEA** | Partial | schema.org JSON-LD on landing pages includes `variableMeasured` (names, units) but no DDI-CDI structure |
-| **NCEI NOAA** | No | schema.org JSON-LD has spatialCoverage/temporalCoverage but no variable descriptions |
-| **Kaggle** | No | Core-level schema.org only |
+| **GESIS** | Inaccessible | API blocked by SPA |
+| **ICPSR** | Inaccessible | Cloudflare bot protection |
+| **PANGAEA** | Partial | `variableMeasured` (names, units) but no DDI-CDI structure |
 
 ### Harvard Dataverse DDI export
-
-The most promising source for variable-level DDI Codebook with `<dataDscr>`:
 
 ```
 GET https://dataverse.harvard.edu/api/datasets/export?exporter=ddi&persistentId={doi}
 ```
 
-Returns full DDI Codebook 2.5 XML including:
-- `<var>` elements with `name`, `@intrvl` (discrete/contin)
-- `<labl>` — variable labels
-- `<varFormat>` — data type (numeric, character)
-- `<catgry>` — category values for coded variables
-- `<notes>` — UNF (Universal Numeric Fingerprint)
-- `<location>` — file reference
+Returns DDI Codebook 2.5 with `<dataDscr>` including `<var>` elements (name, label, format, interval, summary statistics, file reference) and `<fileDscr>` with dimensions (`caseQnty`, `varQnty`). Only for datasets with ingested .tab files.
 
-Only available for datasets with ingested tabular files (`.tab` format in Dataverse). Datasets with non-tabular files (shapefiles, PDFs, etc.) return DDI without variable descriptions.
+### Conversion tool
 
-### SND / researchdata.se
+`validation/DDI/ddi_to_cdif.py` converts DDI Codebook to CDIF DataDescription JSON-LD:
 
-Rich OAI-PMH endpoint with multiple formats but study-level only:
-
-- **Endpoint**: `https://api.researchdata.se/oai-pmh`
-- **Formats**: `oai_dc`, `ddi25`, `ddi33`, `json_ld`, `oai_datacite`, `cmdi`, `csl_json`
-- **JSON-LD**: schema.org Dataset with spatialCoverage, temporalCoverage, structured DefinedTerm keywords from CESSDA vocabularies, ROR-identified affiliations
-- **REST API**: `https://api.researchdata.se/dataset/{id}` returns dataset metadata + embedded JSON-LD
-- **Limitation**: `variableQuantity: N` reported but actual variable list not exposed in any format
+```bash
+python DDI/ddi_to_cdif.py input.xml --doi https://doi.org/10.7910/DVN/XXX \
+  --fetch-headers --fetch-file-meta -o output.json
+```
 
 ## Related repositories
 
-- **[cdif-core](https://github.com/Cross-Domain-Interoperability-Framework/core)** — CDIF Core profile (base properties)
-- **[Discovery](https://github.com/Cross-Domain-Interoperability-Framework/Discovery)** — CDIF Discovery profile (spatial, temporal, variables)
-- **[data-structure-description](https://github.com/Cross-Domain-Interoperability-Framework/data-structure-description)** — DDI-CDI mapping development, example data files, and test metadata
-- **[metadataBuildingBlocks](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks)** — Building block schemas including cdifDataDescription, cdifVariableMeasured, cdifTabularData, cdifLongData, cdifDataCube
-- **[validation](https://github.com/Cross-Domain-Interoperability-Framework/validation)** — Validation tools, DCAT converter, harvester
+- **[cdif-core](https://github.com/Cross-Domain-Interoperability-Framework/core)** — CDIF Core profile
+- **[Discovery](https://github.com/Cross-Domain-Interoperability-Framework/Discovery)** — CDIF Discovery profile
+- **[packaging](https://github.com/Cross-Domain-Interoperability-Framework/packaging)** — Archive bundles and RO-Crate (records moved here that are bundles without DD properties)
+- **[data-structure-description](https://github.com/Cross-Domain-Interoperability-Framework/data-structure-description)** — DDI-CDI mapping development and test data
+- **[metadataBuildingBlocks](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks)** — Building block schemas
+- **[validation](https://github.com/Cross-Domain-Interoperability-Framework/validation)** — Validation tools, DDI converter, DCAT converter, harvester
 
 ## License
 
