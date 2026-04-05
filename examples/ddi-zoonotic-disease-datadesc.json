@@ -1,0 +1,254 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "cdifq": "http://crossdomaininteroperability.org/cdifq/"
+  },
+  "@id": "https://doi.org/10.7910/DVN/KEHRVK",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:name": "Zoonotic Disease Emergence and Spread",
+  "schema:description": "This data was use to investigate the correlation between climate variables (temperature, precipitation) and zoonotic disease",
+  "schema:identifier": "https://doi.org/10.7910/DVN/KEHRVK",
+  "schema:dateModified": "2024-07-27",
+  "schema:datePublished": "2024-07-27",
+  "schema:keywords": [
+    "Social Sciences",
+    "Agricultural Sciences",
+    "Earth and Environmental Sciences",
+    "Arts and Humanities"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "David, Lemuel Kenneth"
+      }
+    ]
+  },
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Harvard Dataverse"
+  },
+  "schema:license": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "schema:url": "https://doi.org/10.7910/DVN/KEHRVK",
+  "schema:variableMeasured": [
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v33797335",
+      "schema:name": "Country",
+      "schema:description": "Country",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v33797332",
+      "schema:name": "Year",
+      "schema:description": "Year",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 2003.0,
+      "schema:maxValue": 2023.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v33797336",
+      "schema:name": "Temperature (°C)",
+      "schema:description": "Temperature (°C)",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": 15.02841633,
+      "schema:maxValue": 29.82225973
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v33797334",
+      "schema:name": "Precipitation (mm)",
+      "schema:description": "Precipitation (mm)",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": 512.3340491,
+      "schema:maxValue": 2998.466074
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v33797330",
+      "schema:name": "Zoonotic Cases",
+      "schema:description": "Zoonotic Cases",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 74.0,
+      "schema:maxValue": 128.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v33797333",
+      "schema:name": "Population Density (per km^2)",
+      "schema:description": "Population Density (per km^2)",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": 51.28098631,
+      "schema:maxValue": 498.1982563
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v33797331",
+      "schema:name": "Urbanization Rate (%)",
+      "schema:description": "Urbanization Rate (%)",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": 30.28221257,
+      "schema:maxValue": 89.90642288
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload",
+        "cdi:TabularTextDataSet"
+      ],
+      "schema:name": "0727 zion data.tab",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/10407725",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "csvw:delimiter": "\t",
+      "csvw:header": true,
+      "csvw:headerRowCount": 1,
+      "cdifq:nRows": 315,
+      "cdifq:nColumns": 7,
+      "schema:contentSize": "20925",
+      "spdx:checksum": {
+        "@type": [
+          "spdx:Checksum"
+        ],
+        "spdx:algorithm": "MD5",
+        "spdx:checksumValue": "e2eea0c9c64439411153c4cefd172374"
+      },
+      "cdi:hasPhysicalMapping": [
+        {
+          "cdi:index": 0,
+          "schema:name": "Country",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v33797335"
+          }
+        },
+        {
+          "cdi:index": 1,
+          "schema:name": "Year",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v33797332"
+          }
+        },
+        {
+          "cdi:index": 2,
+          "schema:name": "Temperature (°C)",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v33797336"
+          }
+        },
+        {
+          "cdi:index": 3,
+          "schema:name": "Precipitation (mm)",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v33797334"
+          }
+        },
+        {
+          "cdi:index": 4,
+          "schema:name": "Zoonotic Cases",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v33797330"
+          }
+        },
+        {
+          "cdi:index": 5,
+          "schema:name": "Population Density (per km^2)",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v33797333"
+          }
+        },
+        {
+          "cdi:index": 6,
+          "schema:name": "Urbanization Rate (%)",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v33797331"
+          }
+        }
+      ]
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.7910/DVN/KEHRVK#metadata",
+    "schema:name": "Metadata record for: Zoonotic Disease Emergence and Spread",
+    "schema:about": {
+      "@id": "https://doi.org/10.7910/DVN/KEHRVK"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/data_description/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "Harvard Dataverse",
+      "schema:url": "https://dataverse.harvard.edu/"
+    },
+    "schema:description": "Metadata harvested from Harvard Dataverse DDI Codebook 2.5 export (doi:10.7910/DVN/KEHRVK, /api/datasets/export?exporter=ddi). Converted to CDIF DataDescription profile by ddi_to_cdif.py. DDI <var> mapped to variableMeasured/cdi:InstanceVariable (varFormat to intendedDataType, intrvl to role, sumStat to minValue/maxValue). DDI dimensns (caseQnty/varQnty) mapped to cdifq:nRows/nColumns. file size/checksum from Dataverse API; physical mappings from 0727 zion data.tab (7 cols). Distributions typed as cdi:TabularTextDataSet with CSVW properties."
+  }
+}

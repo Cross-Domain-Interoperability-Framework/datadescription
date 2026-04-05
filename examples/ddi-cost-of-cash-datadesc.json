@@ -6,7 +6,8 @@
     "prov": "http://www.w3.org/ns/prov#",
     "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
     "csvw": "http://www.w3.org/ns/csvw#",
-    "spdx": "http://spdx.org/rdf/terms#"
+    "spdx": "http://spdx.org/rdf/terms#",
+    "cdifq": "http://crossdomaininteroperability.org/cdifq/"
   },
   "@id": "https://doi.org/10.7910/DVN/CAKWNE",
   "@type": [
@@ -18,8 +19,8 @@
   "schema:dateModified": "2023-05-12",
   "schema:datePublished": "2023-05-12",
   "schema:keywords": [
-    "Business and Management",
-    "Cash; Stress; Compensating differential"
+    "Cash; Stress; Compensating differential",
+    "Business and Management"
   ],
   "schema:creator": {
     "@list": [
@@ -41,656 +42,6 @@
     "https://creativecommons.org/licenses/by/4.0/"
   ],
   "schema:url": "https://doi.org/10.7910/DVN/CAKWNE",
-  "schema:distribution": [
-    {
-      "@type": [
-        "schema:DataDownload",
-        "cdi:TabularTextDataSet"
-      ],
-      "schema:name": "country-public.tab",
-      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/7101636",
-      "schema:encodingFormat": [
-        "text/tab-separated-values"
-      ],
-      "csvw:delimiter": "\t",
-      "csvw:header": true,
-      "csvw:headerRowCount": 1,
-      "cdi:hasPhysicalMapping": [
-        {
-          "cdi:index": 0,
-          "schema:name": "iso3n",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187113"
-          }
-        },
-        {
-          "cdi:index": 1,
-          "schema:name": "ccode",
-          "cdi:physicalDataType": "xsd:string",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187114"
-          }
-        },
-        {
-          "cdi:index": 2,
-          "schema:name": "year",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187118"
-          }
-        },
-        {
-          "cdi:index": 3,
-          "schema:name": "cash_ipolate",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187111"
-          }
-        },
-        {
-          "cdi:index": 4,
-          "schema:name": "wage_ctrlstr_ipolate",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187120"
-          }
-        },
-        {
-          "cdi:index": 5,
-          "schema:name": "wage_cashier_ipolate",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187110"
-          }
-        },
-        {
-          "cdi:index": 6,
-          "schema:name": "wage_cashier_usd",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187115"
-          }
-        },
-        {
-          "cdi:index": 7,
-          "schema:name": "gdp_retail_propn",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187112"
-          }
-        },
-        {
-          "cdi:index": 8,
-          "schema:name": "tax",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187119"
-          }
-        },
-        {
-          "cdi:index": 9,
-          "schema:name": "gdp_pc",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187116"
-          }
-        },
-        {
-          "cdi:index": 10,
-          "schema:name": "popn_mm",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187117"
-          }
-        }
-      ]
-    },
-    {
-      "@type": [
-        "schema:DataDownload",
-        "cdi:TabularTextDataSet"
-      ],
-      "schema:name": "lab-public.tab",
-      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/7101635",
-      "schema:encodingFormat": [
-        "text/tab-separated-values"
-      ],
-      "csvw:delimiter": "\t",
-      "csvw:header": true,
-      "csvw:headerRowCount": 1,
-      "cdi:hasPhysicalMapping": [
-        {
-          "cdi:index": 0,
-          "schema:name": "id",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187145"
-          }
-        },
-        {
-          "cdi:index": 1,
-          "schema:name": "session",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187140"
-          }
-        },
-        {
-          "cdi:index": 2,
-          "schema:name": "total_excess",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187125"
-          }
-        },
-        {
-          "cdi:index": 3,
-          "schema:name": "correct_ans",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187142"
-          }
-        },
-        {
-          "cdi:index": 4,
-          "schema:name": "total_ans",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187135"
-          }
-        },
-        {
-          "cdi:index": 5,
-          "schema:name": "rmssd",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187124"
-          }
-        },
-        {
-          "cdi:index": 6,
-          "schema:name": "rmssd_base",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187137"
-          }
-        },
-        {
-          "cdi:index": 7,
-          "schema:name": "rmssd_1",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187139"
-          }
-        },
-        {
-          "cdi:index": 8,
-          "schema:name": "rmssd_2",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187121"
-          }
-        },
-        {
-          "cdi:index": 9,
-          "schema:name": "rmssd_3",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187133"
-          }
-        },
-        {
-          "cdi:index": 10,
-          "schema:name": "rmssd_math",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187128"
-          }
-        },
-        {
-          "cdi:index": 11,
-          "schema:name": "math",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187130"
-          }
-        },
-        {
-          "cdi:index": 12,
-          "schema:name": "confidence",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187141"
-          }
-        },
-        {
-          "cdi:index": 13,
-          "schema:name": "risk",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187150"
-          }
-        },
-        {
-          "cdi:index": 14,
-          "schema:name": "male",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187132"
-          }
-        },
-        {
-          "cdi:index": 15,
-          "schema:name": "retail_exp",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187134"
-          }
-        },
-        {
-          "cdi:index": 16,
-          "schema:name": "retailexpmths",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187129"
-          }
-        },
-        {
-          "cdi:index": 17,
-          "schema:name": "extraversion",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187127"
-          }
-        },
-        {
-          "cdi:index": 18,
-          "schema:name": "agreeableness",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187143"
-          }
-        },
-        {
-          "cdi:index": 19,
-          "schema:name": "conscientiousness",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187123"
-          }
-        },
-        {
-          "cdi:index": 20,
-          "schema:name": "neuroticism",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187122"
-          }
-        },
-        {
-          "cdi:index": 21,
-          "schema:name": "openness",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187126"
-          }
-        },
-        {
-          "cdi:index": 22,
-          "schema:name": "cash",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187131"
-          }
-        },
-        {
-          "cdi:index": 23,
-          "schema:name": "rmssd_delta",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187136"
-          }
-        },
-        {
-          "cdi:index": 24,
-          "schema:name": "age",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187162"
-          }
-        }
-      ]
-    },
-    {
-      "@type": [
-        "schema:DataDownload",
-        "cdi:TabularTextDataSet"
-      ],
-      "schema:name": "survey-public.tab",
-      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/7101637",
-      "schema:encodingFormat": [
-        "text/tab-separated-values"
-      ],
-      "csvw:delimiter": "\t",
-      "csvw:header": true,
-      "csvw:headerRowCount": 1,
-      "cdi:hasPhysicalMapping": [
-        {
-          "cdi:index": 0,
-          "schema:name": "cashier",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187182"
-          }
-        },
-        {
-          "cdi:index": 1,
-          "schema:name": "relwage",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187176"
-          }
-        },
-        {
-          "cdi:index": 2,
-          "schema:name": "choice",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187165"
-          }
-        },
-        {
-          "cdi:index": 3,
-          "schema:name": "risk",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187150"
-          }
-        },
-        {
-          "cdi:index": 4,
-          "schema:name": "passion",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187153"
-          }
-        },
-        {
-          "cdi:index": 5,
-          "schema:name": "stress",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187146"
-          }
-        },
-        {
-          "cdi:index": 6,
-          "schema:name": "satisfy",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187170"
-          }
-        },
-        {
-          "cdi:index": 7,
-          "schema:name": "attitude",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187168"
-          }
-        },
-        {
-          "cdi:index": 8,
-          "schema:name": "foreign",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187179"
-          }
-        },
-        {
-          "cdi:index": 9,
-          "schema:name": "tenure",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187156"
-          }
-        },
-        {
-          "cdi:index": 10,
-          "schema:name": "tenure_ln",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187157"
-          }
-        },
-        {
-          "cdi:index": 11,
-          "schema:name": "age",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187162"
-          }
-        },
-        {
-          "cdi:index": 12,
-          "schema:name": "age_ln",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187147"
-          }
-        },
-        {
-          "cdi:index": 13,
-          "schema:name": "eduyr",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187171"
-          }
-        },
-        {
-          "cdi:index": 14,
-          "schema:name": "eduyr_ln",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187163"
-          }
-        },
-        {
-          "cdi:index": 15,
-          "schema:name": "bmi",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187155"
-          }
-        },
-        {
-          "cdi:index": 16,
-          "schema:name": "exper",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187181"
-          }
-        },
-        {
-          "cdi:index": 17,
-          "schema:name": "exper_ln",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187160"
-          }
-        },
-        {
-          "cdi:index": 18,
-          "schema:name": "selfpay",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187183"
-          }
-        },
-        {
-          "cdi:index": 19,
-          "schema:name": "edulv",
-          "cdi:physicalDataType": "xsd:string",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187175"
-          }
-        },
-        {
-          "cdi:index": 20,
-          "schema:name": "jobstart",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187159"
-          }
-        },
-        {
-          "cdi:index": 21,
-          "schema:name": "cashierstart",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187177"
-          }
-        },
-        {
-          "cdi:index": 22,
-          "schema:name": "selfpaystart",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187149"
-          }
-        },
-        {
-          "cdi:index": 23,
-          "schema:name": "mode_pref",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187184"
-          }
-        },
-        {
-          "cdi:index": 24,
-          "schema:name": "risk1",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187172"
-          }
-        },
-        {
-          "cdi:index": 25,
-          "schema:name": "risk2",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187166"
-          }
-        },
-        {
-          "cdi:index": 26,
-          "schema:name": "risk3",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187161"
-          }
-        },
-        {
-          "cdi:index": 27,
-          "schema:name": "wage_premium",
-          "cdi:physicalDataType": "xsd:string",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187180"
-          }
-        },
-        {
-          "cdi:index": 28,
-          "schema:name": "reason_card",
-          "cdi:physicalDataType": "xsd:string",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187169"
-          }
-        },
-        {
-          "cdi:index": 29,
-          "schema:name": "store",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187151"
-          }
-        },
-        {
-          "cdi:index": 30,
-          "schema:name": "local",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187174"
-          }
-        },
-        {
-          "cdi:index": 31,
-          "schema:name": "viet",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187158"
-          }
-        },
-        {
-          "cdi:index": 32,
-          "schema:name": "prc",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187148"
-          }
-        },
-        {
-          "cdi:index": 33,
-          "schema:name": "mal",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187167"
-          }
-        },
-        {
-          "cdi:index": 34,
-          "schema:name": "inconsistent",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187154"
-          }
-        },
-        {
-          "cdi:index": 35,
-          "schema:name": "risk2aversion",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187164"
-          }
-        },
-        {
-          "cdi:index": 36,
-          "schema:name": "risk3aversion",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187178"
-          }
-        },
-        {
-          "cdi:index": 37,
-          "schema:name": "riskaversion",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187173"
-          }
-        },
-        {
-          "cdi:index": 38,
-          "schema:name": "risk_miss",
-          "cdi:physicalDataType": "xsd:decimal",
-          "cdi:formats_InstanceVariable": {
-            "@id": "#v31187152"
-          }
-        }
-      ]
-    }
-  ],
   "schema:variableMeasured": [
     {
       "@type": [
@@ -1649,6 +1000,686 @@
       "schema:maxValue": 1.0
     }
   ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload",
+        "cdi:TabularTextDataSet"
+      ],
+      "schema:name": "country-public.tab",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/7101636",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "csvw:delimiter": "\t",
+      "csvw:header": true,
+      "csvw:headerRowCount": 1,
+      "cdifq:nRows": 162,
+      "cdifq:nColumns": 11,
+      "schema:contentSize": "15184",
+      "spdx:checksum": {
+        "@type": [
+          "spdx:Checksum"
+        ],
+        "spdx:algorithm": "MD5",
+        "spdx:checksumValue": "43b7b59291314b274aba23ea35d95f6b"
+      },
+      "cdi:hasPhysicalMapping": [
+        {
+          "cdi:index": 0,
+          "schema:name": "iso3n",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187113"
+          }
+        },
+        {
+          "cdi:index": 1,
+          "schema:name": "ccode",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187114"
+          }
+        },
+        {
+          "cdi:index": 2,
+          "schema:name": "year",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187118"
+          }
+        },
+        {
+          "cdi:index": 3,
+          "schema:name": "cash_ipolate",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187111"
+          }
+        },
+        {
+          "cdi:index": 4,
+          "schema:name": "wage_ctrlstr_ipolate",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187120"
+          }
+        },
+        {
+          "cdi:index": 5,
+          "schema:name": "wage_cashier_ipolate",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187110"
+          }
+        },
+        {
+          "cdi:index": 6,
+          "schema:name": "wage_cashier_usd",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187115"
+          }
+        },
+        {
+          "cdi:index": 7,
+          "schema:name": "gdp_retail_propn",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187112"
+          }
+        },
+        {
+          "cdi:index": 8,
+          "schema:name": "tax",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187119"
+          }
+        },
+        {
+          "cdi:index": 9,
+          "schema:name": "gdp_pc",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187116"
+          }
+        },
+        {
+          "cdi:index": 10,
+          "schema:name": "popn_mm",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187117"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "schema:DataDownload",
+        "cdi:TabularTextDataSet"
+      ],
+      "schema:name": "lab-public.tab",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/7101635",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "csvw:delimiter": "\t",
+      "csvw:header": true,
+      "csvw:headerRowCount": 1,
+      "cdifq:nRows": 122,
+      "cdifq:nColumns": 25,
+      "schema:contentSize": "18250",
+      "spdx:checksum": {
+        "@type": [
+          "spdx:Checksum"
+        ],
+        "spdx:algorithm": "MD5",
+        "spdx:checksumValue": "6eec2cd897fe8b91307c79d69385f4a9"
+      },
+      "cdi:hasPhysicalMapping": [
+        {
+          "cdi:index": 0,
+          "schema:name": "id",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187145"
+          }
+        },
+        {
+          "cdi:index": 1,
+          "schema:name": "session",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187140"
+          }
+        },
+        {
+          "cdi:index": 2,
+          "schema:name": "total_excess",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187125"
+          }
+        },
+        {
+          "cdi:index": 3,
+          "schema:name": "correct_ans",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187142"
+          }
+        },
+        {
+          "cdi:index": 4,
+          "schema:name": "total_ans",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187135"
+          }
+        },
+        {
+          "cdi:index": 5,
+          "schema:name": "rmssd",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187124"
+          }
+        },
+        {
+          "cdi:index": 6,
+          "schema:name": "rmssd_base",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187137"
+          }
+        },
+        {
+          "cdi:index": 7,
+          "schema:name": "rmssd_1",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187139"
+          }
+        },
+        {
+          "cdi:index": 8,
+          "schema:name": "rmssd_2",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187121"
+          }
+        },
+        {
+          "cdi:index": 9,
+          "schema:name": "rmssd_3",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187133"
+          }
+        },
+        {
+          "cdi:index": 10,
+          "schema:name": "rmssd_math",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187128"
+          }
+        },
+        {
+          "cdi:index": 11,
+          "schema:name": "math",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187130"
+          }
+        },
+        {
+          "cdi:index": 12,
+          "schema:name": "confidence",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187141"
+          }
+        },
+        {
+          "cdi:index": 13,
+          "schema:name": "risk",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187150"
+          }
+        },
+        {
+          "cdi:index": 14,
+          "schema:name": "male",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187132"
+          }
+        },
+        {
+          "cdi:index": 15,
+          "schema:name": "retail_exp",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187134"
+          }
+        },
+        {
+          "cdi:index": 16,
+          "schema:name": "retailexpmths",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187129"
+          }
+        },
+        {
+          "cdi:index": 17,
+          "schema:name": "extraversion",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187127"
+          }
+        },
+        {
+          "cdi:index": 18,
+          "schema:name": "agreeableness",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187143"
+          }
+        },
+        {
+          "cdi:index": 19,
+          "schema:name": "conscientiousness",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187123"
+          }
+        },
+        {
+          "cdi:index": 20,
+          "schema:name": "neuroticism",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187122"
+          }
+        },
+        {
+          "cdi:index": 21,
+          "schema:name": "openness",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187126"
+          }
+        },
+        {
+          "cdi:index": 22,
+          "schema:name": "cash",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187131"
+          }
+        },
+        {
+          "cdi:index": 23,
+          "schema:name": "rmssd_delta",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187136"
+          }
+        },
+        {
+          "cdi:index": 24,
+          "schema:name": "age",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187162"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "schema:DataDownload",
+        "cdi:TabularTextDataSet"
+      ],
+      "schema:name": "survey-public.tab",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/7101637",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "csvw:delimiter": "\t",
+      "csvw:header": true,
+      "csvw:headerRowCount": 1,
+      "cdifq:nRows": 972,
+      "cdifq:nColumns": 39,
+      "schema:contentSize": "181072",
+      "spdx:checksum": {
+        "@type": [
+          "spdx:Checksum"
+        ],
+        "spdx:algorithm": "MD5",
+        "spdx:checksumValue": "b14a52aefc928542451e5f266a560927"
+      },
+      "cdi:hasPhysicalMapping": [
+        {
+          "cdi:index": 0,
+          "schema:name": "cashier",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187182"
+          }
+        },
+        {
+          "cdi:index": 1,
+          "schema:name": "relwage",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187176"
+          }
+        },
+        {
+          "cdi:index": 2,
+          "schema:name": "choice",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187165"
+          }
+        },
+        {
+          "cdi:index": 3,
+          "schema:name": "risk",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187150"
+          }
+        },
+        {
+          "cdi:index": 4,
+          "schema:name": "passion",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187153"
+          }
+        },
+        {
+          "cdi:index": 5,
+          "schema:name": "stress",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187146"
+          }
+        },
+        {
+          "cdi:index": 6,
+          "schema:name": "satisfy",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187170"
+          }
+        },
+        {
+          "cdi:index": 7,
+          "schema:name": "attitude",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187168"
+          }
+        },
+        {
+          "cdi:index": 8,
+          "schema:name": "foreign",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187179"
+          }
+        },
+        {
+          "cdi:index": 9,
+          "schema:name": "tenure",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187156"
+          }
+        },
+        {
+          "cdi:index": 10,
+          "schema:name": "tenure_ln",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187157"
+          }
+        },
+        {
+          "cdi:index": 11,
+          "schema:name": "age",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187162"
+          }
+        },
+        {
+          "cdi:index": 12,
+          "schema:name": "age_ln",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187147"
+          }
+        },
+        {
+          "cdi:index": 13,
+          "schema:name": "eduyr",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187171"
+          }
+        },
+        {
+          "cdi:index": 14,
+          "schema:name": "eduyr_ln",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187163"
+          }
+        },
+        {
+          "cdi:index": 15,
+          "schema:name": "bmi",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187155"
+          }
+        },
+        {
+          "cdi:index": 16,
+          "schema:name": "exper",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187181"
+          }
+        },
+        {
+          "cdi:index": 17,
+          "schema:name": "exper_ln",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187160"
+          }
+        },
+        {
+          "cdi:index": 18,
+          "schema:name": "selfpay",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187183"
+          }
+        },
+        {
+          "cdi:index": 19,
+          "schema:name": "edulv",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187175"
+          }
+        },
+        {
+          "cdi:index": 20,
+          "schema:name": "jobstart",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187159"
+          }
+        },
+        {
+          "cdi:index": 21,
+          "schema:name": "cashierstart",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187177"
+          }
+        },
+        {
+          "cdi:index": 22,
+          "schema:name": "selfpaystart",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187149"
+          }
+        },
+        {
+          "cdi:index": 23,
+          "schema:name": "mode_pref",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187184"
+          }
+        },
+        {
+          "cdi:index": 24,
+          "schema:name": "risk1",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187172"
+          }
+        },
+        {
+          "cdi:index": 25,
+          "schema:name": "risk2",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187166"
+          }
+        },
+        {
+          "cdi:index": 26,
+          "schema:name": "risk3",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187161"
+          }
+        },
+        {
+          "cdi:index": 27,
+          "schema:name": "wage_premium",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187180"
+          }
+        },
+        {
+          "cdi:index": 28,
+          "schema:name": "reason_card",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187169"
+          }
+        },
+        {
+          "cdi:index": 29,
+          "schema:name": "store",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187151"
+          }
+        },
+        {
+          "cdi:index": 30,
+          "schema:name": "local",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187174"
+          }
+        },
+        {
+          "cdi:index": 31,
+          "schema:name": "viet",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187158"
+          }
+        },
+        {
+          "cdi:index": 32,
+          "schema:name": "prc",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187148"
+          }
+        },
+        {
+          "cdi:index": 33,
+          "schema:name": "mal",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187167"
+          }
+        },
+        {
+          "cdi:index": 34,
+          "schema:name": "inconsistent",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187154"
+          }
+        },
+        {
+          "cdi:index": 35,
+          "schema:name": "risk2aversion",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187164"
+          }
+        },
+        {
+          "cdi:index": 36,
+          "schema:name": "risk3aversion",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187178"
+          }
+        },
+        {
+          "cdi:index": 37,
+          "schema:name": "riskaversion",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187173"
+          }
+        },
+        {
+          "cdi:index": 38,
+          "schema:name": "risk_miss",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v31187152"
+          }
+        }
+      ]
+    }
+  ],
   "schema:subjectOf": {
     "@type": [
       "schema:Dataset"
@@ -1672,13 +1703,13 @@
         "@id": "https://w3id.org/cdif/data_description/1.0"
       }
     ],
-    "schema:description": "Metadata harvested from Harvard Dataverse DDI Codebook 2.5 export (doi:10.7910/DVN/CAKWNE, /api/datasets/export?exporter=ddi). Converted from DDI Codebook 2.5 to CDIF DataDescription profile by Claude Code. Variable descriptions mapped from DDI <var> elements to schema:variableMeasured with cdi:InstanceVariable extensions. DDI varFormat mapped to cdi:intendedDataType, DDI intrvl mapped to cdi:role (contin->MeasureComponent, discrete->AttributeComponent). Summary statistics (min/max) preserved. Tab file headers fetched to build cdi:hasPhysicalMapping with column indices, physical data types, and formats_InstanceVariable references. Distributions typed as cdi:TabularTextDataSet with CSVW delimiter/header properties.",
     "schema:includedInDataCatalog": {
       "@type": [
         "schema:DataCatalog"
       ],
       "schema:name": "Harvard Dataverse",
       "schema:url": "https://dataverse.harvard.edu/"
-    }
+    },
+    "schema:description": "Metadata harvested from Harvard Dataverse DDI Codebook 2.5 export (doi:10.7910/DVN/CAKWNE, /api/datasets/export?exporter=ddi). Converted to CDIF DataDescription profile by ddi_to_cdif.py. DDI <var> mapped to variableMeasured/cdi:InstanceVariable (varFormat to intendedDataType, intrvl to role, sumStat to minValue/maxValue). DDI dimensns (caseQnty/varQnty) mapped to cdifq:nRows/nColumns. file size/checksum from Dataverse API; physical mappings from country-public.tab (11 cols); physical mappings from lab-public.tab (25 cols); physical mappings from survey-public.tab (39 cols). Distributions typed as cdi:TabularTextDataSet with CSVW properties."
   }
 }

@@ -1,0 +1,1852 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "cdifq": "http://crossdomaininteroperability.org/cdifq/"
+  },
+  "@id": "https://doi.org/10.7910/DVN/CEVZPL",
+  "@type": [
+    "schema:Dataset"
+  ],
+  "schema:name": "Replication Data for: Long-term monitoring reveals an avian species credit in secondary forest patches of Costa Rica",
+  "schema:description": "Data and code necessary to replicate all analyses for the publication Latta et al 2017 Long-term monitoring reveals an avian species credit in secondary forest patches of Costa Rica.  PeerJ.  Data are from a 10-year study using mist nets to monitor trends in avian biodiversity in secondary forest fragments near Las Cruces Biological Station (LCBS), Puntarenas province, Costa Rica.",
+  "schema:identifier": "https://doi.org/10.7910/DVN/CEVZPL",
+  "schema:dateModified": "2017-05-11",
+  "schema:datePublished": "2017-05-12",
+  "schema:keywords": [
+    "Medicine, Health and Life Sciences",
+    "Earth and Environmental Sciences",
+    "ecology",
+    "biodiversity"
+  ],
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Latta, Steven C."
+      },
+      {
+        "@type": [
+          "schema:Person"
+        ],
+        "schema:name": "Brouwer, Nathan L."
+      }
+    ]
+  },
+  "schema:publisher": {
+    "@type": [
+      "schema:Organization"
+    ],
+    "schema:name": "Harvard Dataverse"
+  },
+  "schema:license": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "schema:url": "https://doi.org/10.7910/DVN/CEVZPL",
+  "schema:temporalCoverage": [
+    "2005/2014"
+  ],
+  "schema:variableMeasured": [
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698645",
+      "schema:name": "i.S.Latta",
+      "schema:description": "i.S.Latta",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": 33.0,
+      "schema:maxValue": 459.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698647",
+      "schema:name": "name",
+      "schema:description": "name",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698660",
+      "schema:name": "order",
+      "schema:description": "order",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698644",
+      "schema:name": "family",
+      "schema:description": "family",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698635",
+      "schema:name": "genus",
+      "schema:description": "genus",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698639",
+      "schema:name": "spp",
+      "schema:description": "spp",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698641",
+      "schema:name": "status",
+      "schema:description": "status",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698651",
+      "schema:name": "mig.E.L",
+      "schema:description": "mig.E.L",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698648",
+      "schema:name": "hab.prime",
+      "schema:description": "hab.prime",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698666",
+      "schema:name": "hab.breadth",
+      "schema:description": "hab.breadth",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 1.0,
+      "schema:maxValue": 7.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698658",
+      "schema:name": "sense",
+      "schema:description": "sense",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698652",
+      "schema:name": "cons.priority",
+      "schema:description": "cons.priority",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 3.0,
+      "schema:maxValue": 4.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698653",
+      "schema:name": "forage.guilde",
+      "schema:description": "forage.guilde",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698664",
+      "schema:name": "forage.strata",
+      "schema:description": "forage.strata",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698654",
+      "schema:name": "month",
+      "schema:description": "month",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698662",
+      "schema:name": "sum.05to14",
+      "schema:description": "sum.05to14",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 1.0,
+      "schema:maxValue": 231.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698646",
+      "schema:name": "yrs.not.obs",
+      "schema:description": "yrs.not.obs",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 9.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698659",
+      "schema:name": "max",
+      "schema:description": "max",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 1.0,
+      "schema:maxValue": 76.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698642",
+      "schema:name": "min",
+      "schema:description": "min",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 12.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698661",
+      "schema:name": "variable",
+      "schema:description": "variable",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698640",
+      "schema:name": "N",
+      "schema:description": "N",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 76.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698649",
+      "schema:name": "var",
+      "schema:description": "var",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698637",
+      "schema:name": "year",
+      "schema:description": "year",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 2005.0,
+      "schema:maxValue": 2014.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698638",
+      "schema:name": "year.cent",
+      "schema:description": "year.cent",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": -4.5,
+      "schema:maxValue": 4.5
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698650",
+      "schema:name": "i",
+      "schema:description": "i",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 1.0,
+      "schema:maxValue": 2000.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698655",
+      "schema:name": "mig.elevYN",
+      "schema:description": "mig.elevYN",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698663",
+      "schema:name": "hab.breadth2",
+      "schema:description": "hab.breadth2",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 2.0,
+      "schema:maxValue": 5.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698643",
+      "schema:name": "sense2",
+      "schema:description": "sense2",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698656",
+      "schema:name": "forage.guilde2",
+      "schema:description": "forage.guilde2",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698665",
+      "schema:name": "canopy.ob.YN",
+      "schema:description": "canopy.ob.YN",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698657",
+      "schema:name": "canopy.use.YN",
+      "schema:description": "canopy.use.YN",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698636",
+      "schema:name": "strata.max",
+      "schema:description": "strata.max",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698622",
+      "schema:name": "i.S.Latta",
+      "schema:description": "i.S.Latta",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": 33.0,
+      "schema:maxValue": 459.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698615",
+      "schema:name": "name",
+      "schema:description": "name",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698618",
+      "schema:name": "order",
+      "schema:description": "order",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698633",
+      "schema:name": "family",
+      "schema:description": "family",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698612",
+      "schema:name": "subfam",
+      "schema:description": "subfam",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698606",
+      "schema:name": "genus",
+      "schema:description": "genus",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698626",
+      "schema:name": "spp",
+      "schema:description": "spp",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698631",
+      "schema:name": "group.gen",
+      "schema:description": "group.gen",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698609",
+      "schema:name": "status",
+      "schema:description": "status",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698608",
+      "schema:name": "mig.E.L",
+      "schema:description": "mig.E.L",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698603",
+      "schema:name": "hab.prime",
+      "schema:description": "hab.prime",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698601",
+      "schema:name": "hab.breadth",
+      "schema:description": "hab.breadth",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 1.0,
+      "schema:maxValue": 7.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698597",
+      "schema:name": "sense",
+      "schema:description": "sense",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698624",
+      "schema:name": "cons.priority",
+      "schema:description": "cons.priority",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 3.0,
+      "schema:maxValue": 4.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698621",
+      "schema:name": "forage.guilde",
+      "schema:description": "forage.guilde",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698598",
+      "schema:name": "forage.strata",
+      "schema:description": "forage.strata",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698627",
+      "schema:name": "month",
+      "schema:description": "month",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698610",
+      "schema:name": "n.05",
+      "schema:description": "n.05",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 28.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698625",
+      "schema:name": "n.06",
+      "schema:description": "n.06",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 17.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698614",
+      "schema:name": "n.07",
+      "schema:description": "n.07",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 14.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698630",
+      "schema:name": "n.08",
+      "schema:description": "n.08",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 37.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698613",
+      "schema:name": "n.09",
+      "schema:description": "n.09",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 36.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698616",
+      "schema:name": "n.10",
+      "schema:description": "n.10",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 76.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698632",
+      "schema:name": "n.11",
+      "schema:description": "n.11",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 30.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698611",
+      "schema:name": "n.12",
+      "schema:description": "n.12",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 23.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698607",
+      "schema:name": "n.13",
+      "schema:description": "n.13",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 45.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698604",
+      "schema:name": "n.14",
+      "schema:description": "n.14",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 36.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698602",
+      "schema:name": "sum.05to14",
+      "schema:description": "sum.05to14",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 1.0,
+      "schema:maxValue": 231.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698628",
+      "schema:name": "max",
+      "schema:description": "max",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 1.0,
+      "schema:maxValue": 76.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698617",
+      "schema:name": "min",
+      "schema:description": "min",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 12.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698623",
+      "schema:name": "range",
+      "schema:description": "range",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 1.0,
+      "schema:maxValue": 70.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698595",
+      "schema:name": "min.0",
+      "schema:description": "min.0",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698620",
+      "schema:name": "max.1",
+      "schema:description": "max.1",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698619",
+      "schema:name": "sd",
+      "schema:description": "sd",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": 0.316227766,
+      "schema:maxValue": 23.25902283
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698605",
+      "schema:name": "yrs.not.obs",
+      "schema:description": "yrs.not.obs",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 0.0,
+      "schema:maxValue": 9.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698634",
+      "schema:name": "yr.max.occ",
+      "schema:description": "yr.max.occ",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 1.0,
+      "schema:maxValue": 10.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698599",
+      "schema:name": "yr.min.occ",
+      "schema:description": "yr.min.occ",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 1.0,
+      "schema:maxValue": 10.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698596",
+      "schema:name": "hab.breadth2",
+      "schema:description": "hab.breadth2",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "AttributeComponent",
+      "schema:minValue": 2.0,
+      "schema:maxValue": 5.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698629",
+      "schema:name": "sense2",
+      "schema:description": "sense2",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698600",
+      "schema:name": "forage.guilde2",
+      "schema:description": "forage.guilde2",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698594",
+      "schema:name": "ExplanationofcolumnsindatausedinLattaetal2017.Long-termmonitoringrevealsanavianspeciescreditinsecondaryforestpatchesofCostaRica.PeerJ.",
+      "schema:description": "ExplanationofcolumnsindatausedinLattaetal2017.Long-termmonitoringrevealsanavianspeciescreditinsecondaryforestpatchesofCostaRica.PeerJ.",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698593",
+      "schema:name": "B",
+      "schema:description": "B",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698592",
+      "schema:name": "i",
+      "schema:description": "i",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": 2.0,
+      "schema:maxValue": 456.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698591",
+      "schema:name": "spp",
+      "schema:description": "spp",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698590",
+      "schema:name": "age",
+      "schema:description": "age",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698588",
+      "schema:name": "month",
+      "schema:description": "month",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698589",
+      "schema:name": "count",
+      "schema:description": "count",
+      "cdi:intendedDataType": "xsd:decimal",
+      "cdi:role": "MeasureComponent",
+      "schema:minValue": 1.0,
+      "schema:maxValue": 161.0
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698586",
+      "schema:name": "name",
+      "schema:description": "name",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698587",
+      "schema:name": "code",
+      "schema:description": "code",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    },
+    {
+      "@type": [
+        "schema:PropertyValue",
+        "cdi:InstanceVariable"
+      ],
+      "@id": "#v17698585",
+      "schema:name": "order",
+      "schema:description": "order",
+      "cdi:intendedDataType": "xsd:string",
+      "cdi:role": "AttributeComponent"
+    }
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload",
+        "cdi:TabularTextDataSet"
+      ],
+      "schema:name": "Latta_et_al_mistnet_long.tab",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/3017278",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "csvw:delimiter": "\t",
+      "csvw:header": true,
+      "csvw:headerRowCount": 1,
+      "cdifq:nRows": 2000,
+      "cdifq:nColumns": 32,
+      "schema:contentSize": "395341",
+      "spdx:checksum": {
+        "@type": [
+          "spdx:Checksum"
+        ],
+        "spdx:algorithm": "MD5",
+        "spdx:checksumValue": "d1ae5e493f6a53726122f09feb2055bf"
+      },
+      "cdi:hasPhysicalMapping": [
+        {
+          "cdi:index": 0,
+          "schema:name": "i.S.Latta",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698622"
+          }
+        },
+        {
+          "cdi:index": 1,
+          "schema:name": "name",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698586"
+          }
+        },
+        {
+          "cdi:index": 2,
+          "schema:name": "order",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698585"
+          }
+        },
+        {
+          "cdi:index": 3,
+          "schema:name": "family",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698633"
+          }
+        },
+        {
+          "cdi:index": 4,
+          "schema:name": "genus",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698606"
+          }
+        },
+        {
+          "cdi:index": 5,
+          "schema:name": "spp",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698591"
+          }
+        },
+        {
+          "cdi:index": 6,
+          "schema:name": "status",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698609"
+          }
+        },
+        {
+          "cdi:index": 7,
+          "schema:name": "mig.E.L",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698608"
+          }
+        },
+        {
+          "cdi:index": 8,
+          "schema:name": "hab.prime",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698603"
+          }
+        },
+        {
+          "cdi:index": 9,
+          "schema:name": "hab.breadth",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698601"
+          }
+        },
+        {
+          "cdi:index": 10,
+          "schema:name": "sense",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698597"
+          }
+        },
+        {
+          "cdi:index": 11,
+          "schema:name": "cons.priority",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698624"
+          }
+        },
+        {
+          "cdi:index": 12,
+          "schema:name": "forage.guilde",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698621"
+          }
+        },
+        {
+          "cdi:index": 13,
+          "schema:name": "forage.strata",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698598"
+          }
+        },
+        {
+          "cdi:index": 14,
+          "schema:name": "month",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698588"
+          }
+        },
+        {
+          "cdi:index": 15,
+          "schema:name": "sum.05to14",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698602"
+          }
+        },
+        {
+          "cdi:index": 16,
+          "schema:name": "yrs.not.obs",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698605"
+          }
+        },
+        {
+          "cdi:index": 17,
+          "schema:name": "max",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698628"
+          }
+        },
+        {
+          "cdi:index": 18,
+          "schema:name": "min",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698617"
+          }
+        },
+        {
+          "cdi:index": 19,
+          "schema:name": "variable",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698661"
+          }
+        },
+        {
+          "cdi:index": 20,
+          "schema:name": "N",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698640"
+          }
+        },
+        {
+          "cdi:index": 21,
+          "schema:name": "var",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698649"
+          }
+        },
+        {
+          "cdi:index": 22,
+          "schema:name": "year",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698637"
+          }
+        },
+        {
+          "cdi:index": 23,
+          "schema:name": "year.cent",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698638"
+          }
+        },
+        {
+          "cdi:index": 24,
+          "schema:name": "i",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698592"
+          }
+        },
+        {
+          "cdi:index": 25,
+          "schema:name": "mig.elevYN",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698655"
+          }
+        },
+        {
+          "cdi:index": 26,
+          "schema:name": "hab.breadth2",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698596"
+          }
+        },
+        {
+          "cdi:index": 27,
+          "schema:name": "sense2",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698629"
+          }
+        },
+        {
+          "cdi:index": 28,
+          "schema:name": "forage.guilde2",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698600"
+          }
+        },
+        {
+          "cdi:index": 29,
+          "schema:name": "canopy.ob.YN",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698665"
+          }
+        },
+        {
+          "cdi:index": 30,
+          "schema:name": "canopy.use.YN",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698657"
+          }
+        },
+        {
+          "cdi:index": 31,
+          "schema:name": "strata.max",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698636"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "schema:DataDownload",
+        "cdi:TabularTextDataSet"
+      ],
+      "schema:name": "Latta_et_al_mistnet_wide.tab",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/3017281",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "csvw:delimiter": "\t",
+      "csvw:header": true,
+      "csvw:headerRowCount": 1,
+      "cdifq:nRows": 201,
+      "cdifq:nColumns": 40,
+      "schema:contentSize": "41059",
+      "spdx:checksum": {
+        "@type": [
+          "spdx:Checksum"
+        ],
+        "spdx:algorithm": "MD5",
+        "spdx:checksumValue": "3471ca553254b9041ce69410307be631"
+      },
+      "cdi:hasPhysicalMapping": [
+        {
+          "cdi:index": 0,
+          "schema:name": "i.S.Latta",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698622"
+          }
+        },
+        {
+          "cdi:index": 1,
+          "schema:name": "name",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698586"
+          }
+        },
+        {
+          "cdi:index": 2,
+          "schema:name": "order",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698585"
+          }
+        },
+        {
+          "cdi:index": 3,
+          "schema:name": "family",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698633"
+          }
+        },
+        {
+          "cdi:index": 4,
+          "schema:name": "subfam",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698612"
+          }
+        },
+        {
+          "cdi:index": 5,
+          "schema:name": "genus",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698606"
+          }
+        },
+        {
+          "cdi:index": 6,
+          "schema:name": "spp",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698591"
+          }
+        },
+        {
+          "cdi:index": 7,
+          "schema:name": "group.gen",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698631"
+          }
+        },
+        {
+          "cdi:index": 8,
+          "schema:name": "status",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698609"
+          }
+        },
+        {
+          "cdi:index": 9,
+          "schema:name": "mig.E.L",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698608"
+          }
+        },
+        {
+          "cdi:index": 10,
+          "schema:name": "hab.prime",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698603"
+          }
+        },
+        {
+          "cdi:index": 11,
+          "schema:name": "hab.breadth",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698601"
+          }
+        },
+        {
+          "cdi:index": 12,
+          "schema:name": "sense",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698597"
+          }
+        },
+        {
+          "cdi:index": 13,
+          "schema:name": "cons.priority",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698624"
+          }
+        },
+        {
+          "cdi:index": 14,
+          "schema:name": "forage.guilde",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698621"
+          }
+        },
+        {
+          "cdi:index": 15,
+          "schema:name": "forage.strata",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698598"
+          }
+        },
+        {
+          "cdi:index": 16,
+          "schema:name": "month",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698588"
+          }
+        },
+        {
+          "cdi:index": 17,
+          "schema:name": "n.05",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698610"
+          }
+        },
+        {
+          "cdi:index": 18,
+          "schema:name": "n.06",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698625"
+          }
+        },
+        {
+          "cdi:index": 19,
+          "schema:name": "n.07",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698614"
+          }
+        },
+        {
+          "cdi:index": 20,
+          "schema:name": "n.08",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698630"
+          }
+        },
+        {
+          "cdi:index": 21,
+          "schema:name": "n.09",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698613"
+          }
+        },
+        {
+          "cdi:index": 22,
+          "schema:name": "n.10",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698616"
+          }
+        },
+        {
+          "cdi:index": 23,
+          "schema:name": "n.11",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698632"
+          }
+        },
+        {
+          "cdi:index": 24,
+          "schema:name": "n.12",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698611"
+          }
+        },
+        {
+          "cdi:index": 25,
+          "schema:name": "n.13",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698607"
+          }
+        },
+        {
+          "cdi:index": 26,
+          "schema:name": "n.14",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698604"
+          }
+        },
+        {
+          "cdi:index": 27,
+          "schema:name": "sum.05to14",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698602"
+          }
+        },
+        {
+          "cdi:index": 28,
+          "schema:name": "max",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698628"
+          }
+        },
+        {
+          "cdi:index": 29,
+          "schema:name": "min",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698617"
+          }
+        },
+        {
+          "cdi:index": 30,
+          "schema:name": "range",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698623"
+          }
+        },
+        {
+          "cdi:index": 31,
+          "schema:name": "min.0",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698595"
+          }
+        },
+        {
+          "cdi:index": 32,
+          "schema:name": "max.1",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698620"
+          }
+        },
+        {
+          "cdi:index": 33,
+          "schema:name": "sd",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698619"
+          }
+        },
+        {
+          "cdi:index": 34,
+          "schema:name": "yrs.not.obs",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698605"
+          }
+        },
+        {
+          "cdi:index": 35,
+          "schema:name": "yr.max.occ",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698634"
+          }
+        },
+        {
+          "cdi:index": 36,
+          "schema:name": "yr.min.occ",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698599"
+          }
+        },
+        {
+          "cdi:index": 37,
+          "schema:name": "hab.breadth2",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698596"
+          }
+        },
+        {
+          "cdi:index": 38,
+          "schema:name": "sense2",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698629"
+          }
+        },
+        {
+          "cdi:index": 39,
+          "schema:name": "forage.guilde2",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698600"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "schema:DataDownload",
+        "cdi:TabularTextDataSet"
+      ],
+      "schema:name": "Latta_et_al_mistnet_wide_README.tab",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/3017276",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "csvw:delimiter": "\t",
+      "csvw:header": true,
+      "csvw:headerRowCount": 1,
+      "cdifq:nRows": 41,
+      "cdifq:nColumns": 2,
+      "schema:contentSize": "2678",
+      "spdx:checksum": {
+        "@type": [
+          "spdx:Checksum"
+        ],
+        "spdx:algorithm": "MD5",
+        "spdx:checksumValue": "f5184f72627f9eef63d650663df71c1f"
+      },
+      "cdi:hasPhysicalMapping": [
+        {
+          "cdi:index": 0,
+          "schema:name": "ExplanationofcolumnsindatausedinLattaetal2017.Long-termmonitoringrevealsanavianspeciescreditinsecondaryforestpatchesofCostaRica.PeerJ.",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698594"
+          }
+        },
+        {
+          "cdi:index": 1,
+          "schema:name": "B",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698593"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "schema:DataDownload",
+        "cdi:TabularTextDataSet"
+      ],
+      "schema:name": "Latta_et_al_point_counts_long.tab",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/3017279",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "csvw:delimiter": "\t",
+      "csvw:header": true,
+      "csvw:headerRowCount": 1,
+      "cdifq:nRows": 161,
+      "cdifq:nColumns": 5,
+      "schema:contentSize": "10354",
+      "spdx:checksum": {
+        "@type": [
+          "spdx:Checksum"
+        ],
+        "spdx:algorithm": "MD5",
+        "spdx:checksumValue": "a5a0fbff25a61f7f3dccaeec8a044457"
+      },
+      "cdi:hasPhysicalMapping": [
+        {
+          "cdi:index": 0,
+          "schema:name": "i",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698592"
+          }
+        },
+        {
+          "cdi:index": 1,
+          "schema:name": "spp",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698591"
+          }
+        },
+        {
+          "cdi:index": 2,
+          "schema:name": "age",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698590"
+          }
+        },
+        {
+          "cdi:index": 3,
+          "schema:name": "month",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698588"
+          }
+        },
+        {
+          "cdi:index": 4,
+          "schema:name": "count",
+          "cdi:physicalDataType": "xsd:decimal",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698589"
+          }
+        }
+      ]
+    },
+    {
+      "@type": [
+        "schema:DataDownload",
+        "cdi:TabularTextDataSet"
+      ],
+      "schema:name": "Latta_et_al_species_codes_for_spp_with_sig_trends.tab",
+      "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/3017277",
+      "schema:encodingFormat": [
+        "text/tab-separated-values"
+      ],
+      "csvw:delimiter": "\t",
+      "csvw:header": true,
+      "csvw:headerRowCount": 1,
+      "cdifq:nRows": 26,
+      "cdifq:nColumns": 3,
+      "schema:contentSize": "882",
+      "spdx:checksum": {
+        "@type": [
+          "spdx:Checksum"
+        ],
+        "spdx:algorithm": "MD5",
+        "spdx:checksumValue": "a0132b5643422814c3bc852c47906f01"
+      },
+      "cdi:hasPhysicalMapping": [
+        {
+          "cdi:index": 0,
+          "schema:name": "name",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698586"
+          }
+        },
+        {
+          "cdi:index": 1,
+          "schema:name": "code",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698587"
+          }
+        },
+        {
+          "cdi:index": 2,
+          "schema:name": "order",
+          "cdi:physicalDataType": "xsd:string",
+          "cdi:formats_InstanceVariable": {
+            "@id": "#v17698585"
+          }
+        }
+      ]
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "https://doi.org/10.7910/DVN/CEVZPL#metadata",
+    "schema:name": "Metadata record for: Replication Data for: Long-term monitoring reveals an avian species credit in secondary forest patches of Costa Rica",
+    "schema:about": {
+      "@id": "https://doi.org/10.7910/DVN/CEVZPL"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/data_description/1.0"
+      }
+    ],
+    "schema:includedInDataCatalog": {
+      "@type": [
+        "schema:DataCatalog"
+      ],
+      "schema:name": "Harvard Dataverse",
+      "schema:url": "https://dataverse.harvard.edu/"
+    },
+    "schema:description": "Metadata harvested from Harvard Dataverse DDI Codebook 2.5 export (doi:10.7910/DVN/CEVZPL, /api/datasets/export?exporter=ddi). Converted to CDIF DataDescription profile by ddi_to_cdif.py. DDI <var> mapped to variableMeasured/cdi:InstanceVariable (varFormat to intendedDataType, intrvl to role, sumStat to minValue/maxValue). DDI dimensns (caseQnty/varQnty) mapped to cdifq:nRows/nColumns. file size/checksum from Dataverse API; physical mappings from Latta_et_al_mistnet_long.tab (32 cols); physical mappings from Latta_et_al_mistnet_wide.tab (40 cols); physical mappings from Latta_et_al_mistnet_wide_README.tab (2 cols); physical mappings from Latta_et_al_point_counts_long.tab (5 cols); physical mappings from Latta_et_al_species_codes_for_spp_with_sig_trends.tab (3 cols). Distributions typed as cdi:TabularTextDataSet with CSVW properties."
+  }
+}
