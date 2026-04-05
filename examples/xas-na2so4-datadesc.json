@@ -1,0 +1,214 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "geosparql": "http://www.opengis.net/ont/geosparql#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "time": "http://www.w3.org/2006/time#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xas": "http://cdi4exas.org/",
+    "cdifq": "http://crossdomaininteroperability.org/cdifq/"
+  },
+  "@id": "xas:485749",
+  "@type": [
+    "schema:Dataset",
+    "schema:Product"
+  ],
+  "schema:name": "X-ray absorption spectra for K edge, selenium in sodium selenate",
+  "schema:description": "comment from xdi file: room temperature; measured at beamline 13-BM-D.  need a better description of what's in this datasset-- maybe the DCAT metadata has what we need?",
+  "schema:identifier": "should have a DOI",
+  "schema:url": "https://github.com/XraySpectroscopy/XASDataLibrary/blob/master/data/Se/Se_Na2SeO4_rt_01.xdi",
+  "schema:dateModified": "2026-02-28",
+  "schema:contributor": [
+    {
+      "@type": [
+        "schema:Role"
+      ],
+      "schema:roleName": "Facility",
+      "schema:contributor": {
+        "@type": [
+          "schema:Organization"
+        ],
+        "@id": "#aps",
+        "schema:name": "Advanced Photon Source (APS)"
+      }
+    }
+  ],
+  "schema:license": [
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "schema:distribution": [
+    {
+      "@type": [
+        "schema:DataDownload"
+      ],
+      "schema:contentUrl": "https://github.com/XraySpectroscopy/XASDataLibrary/blob/master/data/Se/Se_Na2SeO4_rt_01.xdi",
+      "schema:description": "Distribution = PhysicalDataSet text file conformant with XDI specification",
+      "schema:contentSize": "30 kb",
+      "schema:encodingFormat": [
+        "text/plain"
+      ],
+      "dcterms:conformsTo": [
+        {
+          "@id": "https://github.com/XraySpectroscopy/XAS-Data-Interchange/blob/master/specification/spec.md"
+        }
+      ]
+    }
+  ],
+  "schema:measurementTechnique": [
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "X-Ray Absorption Spectroscopy",
+      "schema:termCode": "XAS",
+      "schema:identifier": "http://purl.org/pan-science/PaNET/PaNET01196",
+      "schema:inDefinedTermSet": "http://purl.org/pan-science/PaNET/PaNET.owl"
+    }
+  ],
+  "schema:keywords": [
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "Selenium",
+      "schema:termCode": "Se",
+      "schema:identifier": {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:propertyID": "http://www.opengis.net/def/nil/OGC/0/missing",
+        "schema:url": "http://sweetontology.net/matrElement/Selenium"
+      },
+      "schema:inDefinedTermSet": "http://sweetontology.net/matrElement"
+    },
+    {
+      "@type": [
+        "schema:DefinedTerm"
+      ],
+      "schema:name": "K-edge",
+      "schema:termCode": "K",
+      "schema:inDefinedTermSet": "https://github.com/XraySpectroscopy/XAS-Data-Interchange/blob/master/specification/dictionary.md"
+    }
+  ],
+  "schema:variableMeasured": [
+    {
+      "@id": "xas:monochromatorEnergyVariable",
+      "@type": [
+        "cdi:InstanceVariable",
+        "schema:PropertyValue"
+      ],
+      "schema:name": "energy",
+      "schema:alternateName": [
+        "Monochromator energy"
+      ],
+      "schema:description": "The energy selected by the X-ray monochromator and delivered to the sample during an absorption scan.",
+      "schema:propertyID": [
+        {
+          "@id": "xas:Monochromator_Energy"
+        }
+      ],
+      "schema:unitText": "eV",
+      "cdi:identifier": "should be URI from nexusFormat organization",
+      "cdi:physicalDataType": [
+        "https://www.w3.org/TR/xmlschema-2/#decimal"
+      ],
+      "cdi:simpleUnitOfMeasure": "eV",
+      "cdi:uses": [
+        "xas:Monochromator_Energy"
+      ],
+      "cdi:name": "energy",
+      "cdi:displayLabel": "monochromator energy"
+    },
+    {
+      "@id": "xas:incidentIntensityVariable",
+      "@type": [
+        "cdi:InstanceVariable",
+        "schema:PropertyValue"
+      ],
+      "schema:name": "i0",
+      "schema:alternateName": [
+        "Monitor intensity"
+      ],
+      "schema:description": "The measured X-ray intensity before it interacts with the sample. ",
+      "schema:propertyID": [
+        {
+          "@id": "xas:Incident_Intensity"
+        }
+      ],
+      "schema:unitText": "counts",
+      "schema:measurementTechnique": {
+        "@id": "xas:Detector10cmN2"
+      },
+      "cdi:identifier": "should be URI from nexusFormat organization",
+      "cdi:physicalDataType": [
+        "https://www.w3.org/TR/xmlschema-2/#decimal"
+      ],
+      "cdi:uses": [
+        "xas:Incident_Intensity"
+      ],
+      "cdi:name": "i0",
+      "cdi:displayLabel": "monitor intensity"
+    },
+    {
+      "@id": "xas:transmittedIntensityVariable",
+      "@type": [
+        "cdi:InstanceVariable",
+        "schema:PropertyValue"
+      ],
+      "schema:description": "missing, definition of what this variable is about (maybe even an iAdopt description",
+      "schema:propertyID": [
+        {
+          "@id": "xas:Transmitted_Intensity"
+        }
+      ],
+      "schema:unitText": "counts",
+      "schema:name": "itrans",
+      "schema:alternateName": [
+        "transmission intensity"
+      ],
+      "schema:measurementTechnique": {
+        "@id": "xas:Detector10cmN2"
+      },
+      "cdi:physicalDataType": [
+        "https://www.w3.org/TR/xmlschema-2/#decimal"
+      ],
+      "cdi:identifier": "should be URI from nexusFormat organization",
+      "cdi:uses": [
+        "xas:Transmitted_Intensity"
+      ],
+      "cdi:name": "itrans",
+      "cdi:displayLabel": "transmission intensity"
+    }
+  ],
+  "schema:subjectOf": {
+    "@type": [
+      "schema:Dataset"
+    ],
+    "schema:additionalType": [
+      "dcat:CatalogRecord"
+    ],
+    "@id": "xas:485749#metadata",
+    "schema:name": "Metadata record for: X-ray absorption spectra for K edge, selenium in sodium selenate",
+    "schema:about": {
+      "@id": "xas:485749"
+    },
+    "dcterms:conformsTo": [
+      {
+        "@id": "https://w3id.org/cdif/core/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/discovery/1.0"
+      },
+      {
+        "@id": "https://w3id.org/cdif/data_description/1.0"
+      }
+    ],
+    "schema:description": "Simplified to DataDescription profile from validation MetadataExamples. Provenance extensions removed. Structural fixes applied for CDIF conformance."
+  }
+}
