@@ -1847,6 +1847,6 @@
       "schema:name": "Harvard Dataverse",
       "schema:url": "https://dataverse.harvard.edu/"
     },
-    "schema:description": "Metadata harvested from Harvard Dataverse DDI Codebook 2.5 export (doi:10.7910/DVN/CEVZPL, /api/datasets/export?exporter=ddi). Converted to CDIF DataDescription profile by ddi_to_cdif.py. DDI <var> mapped to variableMeasured/cdi:InstanceVariable (varFormat to intendedDataType, intrvl to role, sumStat to minValue/maxValue). DDI dimensns (caseQnty/varQnty) mapped to cdifq:nRows/nColumns. file size/checksum from Dataverse API; physical mappings from Latta_et_al_mistnet_long.tab (32 cols); physical mappings from Latta_et_al_mistnet_wide.tab (40 cols); physical mappings from Latta_et_al_mistnet_wide_README.tab (2 cols); physical mappings from Latta_et_al_point_counts_long.tab (5 cols); physical mappings from Latta_et_al_species_codes_for_spp_with_sig_trends.tab (3 cols). Distributions typed as cdi:TabularTextDataSet with CSVW properties."
+    "schema:description": "Converted from DDI Codebook 2.5 XML exported by Harvard Dataverse (DOI: 10.7910/DVN/CEVZPL) using ddi_to_cdif.py. DDI variable elements mapped to DDI-CDI InstanceVariable with intendedDataType from varFormat, role from intrvl attribute. Tab file column headers fetched from Dataverse to construct cdi:hasPhysicalMapping."
   }
 }

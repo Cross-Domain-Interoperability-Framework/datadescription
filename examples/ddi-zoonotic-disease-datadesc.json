@@ -249,6 +249,6 @@
       "schema:name": "Harvard Dataverse",
       "schema:url": "https://dataverse.harvard.edu/"
     },
-    "schema:description": "Metadata harvested from Harvard Dataverse DDI Codebook 2.5 export (doi:10.7910/DVN/KEHRVK, /api/datasets/export?exporter=ddi). Converted to CDIF DataDescription profile by ddi_to_cdif.py. DDI <var> mapped to variableMeasured/cdi:InstanceVariable (varFormat to intendedDataType, intrvl to role, sumStat to minValue/maxValue). DDI dimensns (caseQnty/varQnty) mapped to cdifq:nRows/nColumns. file size/checksum from Dataverse API; physical mappings from 0727 zion data.tab (7 cols). Distributions typed as cdi:TabularTextDataSet with CSVW properties."
+    "schema:description": "Converted from DDI Codebook 2.5 XML exported by Harvard Dataverse (DOI: 10.7910/DVN/KEHRVK) using ddi_to_cdif.py. DDI variable elements mapped to DDI-CDI InstanceVariable with intendedDataType from varFormat, role from intrvl attribute. Tab file column headers fetched from Dataverse to construct cdi:hasPhysicalMapping."
   }
 }

@@ -605,6 +605,6 @@
       "schema:name": "EarthChem Library",
       "schema:url": "https://www.earthchem.org/library"
     },
-    "schema:description": "Synthetic CDIF DataDescription example demonstrating multiple distribution types (TabularTextDataSet CSV, StructuredDataSet NetCDF, WebAPI OGC Features), physical mappings, DDI-CDI variable descriptions, and full metadata provenance. Content is realistic but identifiers are illustrative."
+    "schema:description": "Synthetic example created for the CDIF specification documentation, illustrating CDIF data description profile with TabularTextDataSet and StructuredDataSet (data cube) representations for volcanic rock geochemistry data."
   }
 }
