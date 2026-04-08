@@ -703,25 +703,28 @@
         }
       ],
       "schema:subjectOf": {
-        "@id": "ex:nwis-wq-meta-001",
         "@type": [
+          "schema:Dataset"
+        ],
+        "schema:additionalType": [
           "dcat:CatalogRecord"
         ],
-        "schema:sdDatePublished": "2026-02-24",
+        "@id": "ex:nwis-wq-longdata-001#metadata",
         "schema:about": {
           "@id": "ex:nwis-wq-longdata-001"
         },
         "dcterms:conformsTo": [
           {
-            "@id": "https://w3id.org/cdif/core/1.0/"
+            "@id": "https://w3id.org/cdif/core/1.0"
           },
           {
-            "@id": "https://w3id.org/cdif/discovery/1.0/"
+            "@id": "https://w3id.org/cdif/discovery/1.0"
           },
           {
-            "@id": "cdif:profile_longData"
+            "@id": "https://w3id.org/cdif/data_description/1.0"
           }
-        ]
+        ],
+        "schema:sdDatePublished": "2026-02-24"
       }
     }
   ],
@@ -757,7 +760,8 @@
         "@id": "https://w3id.org/cdif/data_description/1.0"
       }
     ],
-    "schema:description": "Adapted from USGS National Water Information System (NWIS) water quality data for Pima County, Arizona. Demonstrates CDIF data description profile with DDI-CDI LongStructureDataSet for long-format observational data with csvw table properties."
+    "schema:description": "Adapted from USGS National Water Information System (NWIS) water quality data for Pima County, Arizona. Demonstrates CDIF data description profile with DDI-CDI LongStructureDataSet for long-format observational data with csvw table properties. 2026-04-08: Fixed schema:subjectOf structure: changed @type from dcat:CatalogRecord to schema:Dataset with schema:additionalType dcat:CatalogRecord; normalized dcterms:conformsTo URIs (removed trailing slashes, replaced cdif:profile_longData with https://w3id.org/cdif/data_description/1.0); added schema:sdDatePublished.",
+    "schema:sdDatePublished": "2025-01-01"
   },
   "schema:identifier": "https://example.org/dataset/nwis-longdata-datadesc",
   "schema:url": "https://example.org/dataset/nwis-longdata-datadesc"

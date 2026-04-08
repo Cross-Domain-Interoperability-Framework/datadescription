@@ -579,11 +579,18 @@
       }
     ],
     "schema:maintainer": {
-      "@id": "https://orcid.org/0000-0001-9876-5432",
       "@type": [
         "schema:Person"
       ],
       "schema:name": "Martinez, Carlos A.",
+      "schema:identifier": {
+        "@type": [
+          "schema:PropertyValue"
+        ],
+        "schema:propertyID": "https://orcid.org",
+        "schema:value": "0000-0001-9876-5432",
+        "schema:url": "https://orcid.org/0000-0001-9876-5432"
+      },
       "schema:affiliation": {
         "@type": [
           "schema:Organization"
@@ -605,6 +612,6 @@
       "schema:name": "EarthChem Library",
       "schema:url": "https://www.earthchem.org/library"
     },
-    "schema:description": "Synthetic example created for the CDIF specification documentation, illustrating CDIF data description profile with TabularTextDataSet and StructuredDataSet (data cube) representations for volcanic rock geochemistry data."
+    "schema:description": "Synthetic example created for the CDIF specification documentation, illustrating CDIF data description profile with TabularTextDataSet and StructuredDataSet (data cube) representations for volcanic rock geochemistry data. 2026-04-08: Removed @id from schema:subjectOf/schema:maintainer Person (shared @id with contributor caused JSON-LD framing to merge blank node children); added schema:identifier with ORCID instead."
   }
 }

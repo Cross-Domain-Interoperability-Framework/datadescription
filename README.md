@@ -77,6 +77,26 @@ python DDI/ddi_to_cdif.py input.xml --doi https://doi.org/10.7910/DVN/XXX \
   --fetch-headers --fetch-file-meta -o output.json
 ```
 
+## JSON-LD Framing and Validation
+
+**`FrameAndValidate.py`** frames a JSON-LD document against the Data Description profile schema and optionally validates it:
+
+```bash
+# Frame and validate
+python FrameAndValidate.py examples/cdif-datadesc-example.json --validate
+
+# Frame and save output
+python FrameAndValidate.py examples/cdif-datadesc-example.json -o framed.json
+```
+
+The script uses **`CDIFDataDescription-frame.jsonld`** to frame JSON-LD documents into the expected property structure. Context prefixes from the input document are automatically merged into the frame.
+
+**Requirements:** `pyld`, `jsonschema` (`pip install pyld jsonschema`)
+
+## SHACL Validation
+
+**`rules.shacl`** contains self-contained SHACL shapes for validating CDIF Data Description profile instances. This file merges shapes from all composing building blocks (cdifCore, cdifCatalogRecord, cdifDataDescription, definedTerm, variableMeasured, spatialExtent, temporalExtent, qualityMeasure) with the profile-level shapes, so it can be used standalone. Source shapes come from [`metadataBuildingBlocks/_sources/`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/tree/main/_sources) and should be regenerated when source shapes change.
+
 ## Related repositories
 
 - **[cdif-core](https://github.com/Cross-Domain-Interoperability-Framework/core)** — CDIF Core profile
