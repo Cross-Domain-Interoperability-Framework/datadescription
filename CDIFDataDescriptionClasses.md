@@ -18,11 +18,11 @@ This profile applies to description of resources that can be described using the
 
 #### Required Properties from cdif Core profile
 
-##### id
+##### @id
 
 > \[Required\] (string) This is an identifier for this node in an rdf graph. JSON-LD key is \@id.
 
-##### type
+##### @type
 
 > \[Required -- \"Dataset\", Repeatable\] (string.uri) The type property specifies the rdf:type classification. For this implementation, the type is represented with the JSON-LD \@type property, and must include \'Dataset\'. JSON-LD key is \@type. Type assertions here should be understood to imply the usage of properties associated with the identified type, whether from schema.org or other vocabularies that might define the type.
 
@@ -30,7 +30,7 @@ This profile applies to description of resources that can be described using the
 
 > \[Required\] (string). A descriptive name of a dataset (e.g., \'Snow depth in Northern Hemisphere\'). The name should uniquely identify the described resource for human use, in the scope of the metadata catalog containing this metadata record. Schema.org property, in namepace \'http://schema.org/\'.
 
-##### identifier 
+##### @identifier 
 
 > \[Required\] (string.uri or PropertyValue-(identifier)). The primary identifier for the described resource; other identifiers should be listed in the sameAs field. CDIF recommends that if the identifier is a resolvable URI, use the string option; if the identifier is a string that is not a resolvable URI, use the schema:PropertyValue class to provide context for interpreting the identifier. Schema.org property, in namepace \'http://schema.org/\'.
 
@@ -170,11 +170,11 @@ CHOICE at least one of two options:
 
 file-based access to a resource via URL; the DataDownload object provides a link to get the resource content, along with information about the serialization format and conventions used.
 
-##### id
+##### @id
 
 \[Optional\] (string:uri). Graph node identifiers are only necessary if the node content will be referenced in other places
 
-##### type
+##### @type
 
 \[**Required** -- \'DataDownload\', other types optional\](string.uri) This is the rdf:type.
 
@@ -228,7 +228,7 @@ Provides information to request data through a web accessible service endpoint. 
 
 ### Action
 
-##### type
+##### @type
 
 \[Required, Repeatable\] (string.uri) The rdf type default is \'Action\', but any of these schema.org actions will validate: {Action, AssessAction, ConsumeAction, ControlAction, CreateAction, DeleteAction, FindAction, InteractAction, MoveAction, PlayAction, SearchAction, TransferAction, UpdateAction}
 
@@ -256,11 +256,11 @@ Provides information to request data through a web accessible service endpoint. 
 
 Object representing a person.
 
-##### id
+##### @id
 
 \[Optional\](string.uri) Identifier for this graph node. Useful to reference this Person using object references if they appear more that once in the metadata record.
 
-##### type
+##### @type
 
 \[Required -- \'Person\', Repeatable\] (string.uri) rdf:type for this JSON-LD object.
 
@@ -268,7 +268,7 @@ Object representing a person.
 
 \[Required if no identifier\](string) Label for person that is meaningful for human users, should format consistently. Recommend \'Family Name, Given Name\' format.
 
-##### identifier
+##### @identifier
 
 \[Required if no name\] (string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier))
 
@@ -294,11 +294,11 @@ Object representing a person.
 
 ###  Organization
 
-##### id
+##### @id
 
 \[Optional\](string.uri) Identifier for this graph node. Useful to reference this Organization using object references if they appear more that once in the metadata record.
 
-##### type
+##### @type
 
 \[Required -- \'Organization\', Repeatable\](string.uri) rdf:type, list must include Organization, but other schema.org types can be added for more precision: FundingAgency, Consortium, Corporation, EducationalOrganization, FundingScheme, GovernmentOrganization, NGO, Project, ResearchOrganization, defined by enumeration in the schema.
 
@@ -306,7 +306,7 @@ Object representing a person.
 
 \[Required if no identifier\](string) Label for the Organization
 
-##### identifier
+##### @identifier
 
 \[Required if no name\] (string.uri or PropertyValue-(identifier))
 
@@ -330,7 +330,7 @@ Object representing a person.
 
 Information about how to communicate with a person or organization. CDIF only includes e-mail in its schema.
 
-##### type
+##### @type
 
 \[Required -- \'ContactPoint\', Repeatable\] (string.uri)
 
@@ -342,7 +342,7 @@ Information about how to communicate with a person or organization. CDIF only in
 
 For more granularity on how an agent contributed to a resource, use schema:Role. The schema.org documentation does not state that the Role type is an expected data type for the contributor property, but that is addressed in this blog post (http://blog.schema.org/2014/06/introducing-role.html). see also [ESIPfed Science on Schema.org roles of people note](https://github.com/ESIPFed/science-on-schema.org/blob/develop/guides/Dataset.md#roles-of-people).
 
-##### type
+##### @type
 
 \[Required \-- \'Role\', Repeatable\] (string.uri) rdf:type
 
@@ -356,13 +356,13 @@ For more granularity on how an agent contributed to a resource, use schema:Role.
 
 ### MonetaryGrant
 
-##### type
+##### @type
 
 \[Required \-- \'MonetaryGrant\', Repeatable\](string.uri)
 
 CHOICE (at least one of identifier, name, or funder
 
-##### identifier
+##### @identifier
 
 \[Required if no name or funder\] (string.uri or PropertyValue-(identifier)) identifier for a particular grant
 
@@ -382,11 +382,11 @@ CHOICE (at least one of identifier, name, or funder
 
 This is the class used to provide information about the metadata record itself.
 
-##### id
+##### @id
 
 \[Required\](string.uri) Identifier for the metadata record.
 
-##### type
+##### @type
 
 \[Required -- \"Dataset\", Repeatable\](string.uri)
 
@@ -422,11 +422,11 @@ This is the class used to provide information about the metadata record itself.
 
 An accessible collection of data. The data might be metadata (about other resources) or datasets.
 
-##### type
+##### @type
 
 \[Required -- \'DataCatalog\', Repeatable\] (string.uri)
 
-##### id
+##### @id
 
 \[Optional\](string.uri) identifier for graph node.
 
@@ -438,7 +438,7 @@ An accessible collection of data. The data might be metadata (about other resour
 
 \[Optional\](string.url) Url to access catalog landing page.
 
-##### identifier
+##### @identifier
 
 \[Optional\] (string.uri or PropertyValue-(identifier)) Identifier for the data catalog.
 
@@ -446,11 +446,11 @@ An accessible collection of data. The data might be metadata (about other resour
 
 ### PropertyValue-(variableMeasured)
 
-##### type
+##### @type
 
 \[Required -- \"PropertyValue\", Repeatable\] (string.uri)
 
-##### id
+##### @id
 
 \[Optional\](string.uri)
 
@@ -496,7 +496,7 @@ An accessible collection of data. The data might be metadata (about other resour
 
 ### Place
 
-##### type
+##### @type
 
 \[Required -- \"Place\", Repeatable\]
 
@@ -510,7 +510,7 @@ CHOICE. At least one of the following four is required
 
 \[Conditional, Repeatable\] (string or [DefinedTerm](#defined-term)) multiple place names or DefinedTerms that have a place name and URI for the location
 
-##### identifier
+##### @identifier
 
 \[Conditional\] (string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier))
 
@@ -528,7 +528,7 @@ CHOICE. At least one of the following four is required
 
 ### Defined Term
 
-##### type
+##### @type
 
 \[Required -- \'DefinedTerm\', Repeatable\](string.uri)
 
@@ -536,7 +536,7 @@ CHOICE. At least one of the following four is required
 
 \[Required if no identifier or termCode\](string) label for the term
 
-##### identifier
+##### @identifier
 
 \[Required if no name or termCode\] (string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier))
 
@@ -554,7 +554,7 @@ CHOICE. At least one of the following four is required
 
 This class describes a CdifVariableMeasured node, extending schema.org PropertyValue with DDI-CDI InstanceVariable properties. It composes the base variableMeasured building block via allOf. At the Data Description level, a variableMeasured item uses this extended class to provide physical data type information, variable roles, and cross-variable references.
 
-##### type
+##### @type
 
 \[Required, Repeatable\] (string.uri) Must include cdi:InstanceVariable. Additional types may be included.
 
@@ -606,7 +606,7 @@ This class describes a CdifVariableMeasured node, extending schema.org PropertyV
 
 ### PropertyValue-(identifier)
 
-##### type
+##### @type
 
 \[Required -- \'PropertyValue\', Repeatable\](string.uri)
 
@@ -624,7 +624,7 @@ This class describes a CdifVariableMeasured node, extending schema.org PropertyV
 
 ### Labeled Link
 
-##### type
+##### @type
 
 \[Required -- \'CreativeWork\', Repeatable\](string.uri)
 
@@ -654,7 +654,7 @@ This class describes a CdifVariableMeasured node, extending schema.org PropertyV
 
 This is the type used for links that have an associated semantic conveyed by the linkRelationship.
 
-##### type
+##### @type
 
 \[Required -- \'LinkRole, Repeatable\](string.uri)
 
@@ -670,7 +670,7 @@ This is the type used for links that have an associated semantic conveyed by the
 
 Use to document the URL that is the target for invoking an action, or that is the target object of a link relationship.
 
-##### type
+##### @type
 
 \[Required -- \"EntryPoint\", Repeatable\](string. Uri)
 
@@ -692,7 +692,7 @@ Use to document the URL that is the target for invoking an action, or that is th
 
 A point location specified with latitude and longitude in decimal degrees, using the WGS84 spatial reference system.
 
-##### type
+##### @type
 
 \Required -- \' [GeoCoordinates'\] (string:uri)
 
@@ -708,7 +708,7 @@ A point location specified with latitude and longitude in decimal degrees, using
 
 CDIF limits schema:GeoShape to a box or line (schema.org includes other options). Point locations are tuples of {latitude east-longitude} (y x). (documentation from [Science on Schema.org](https://github.com/ESIPFed/science-on-schema.org/blob/develop/guides/Dataset.md#spatial-coverage) see details there)
 
-##### type
+##### @type
 
 \[Required -- \'GeoShape\'\](string:uri)
 
@@ -722,7 +722,7 @@ CDIF limits schema:GeoShape to a box or line (schema.org includes other options)
 
 ### sf:SimpleFeature
 
-##### type
+##### @type
 
 \[Required\](string:uri) Must be MUST be sf:SimpleFeature geometry type (http://www.opengis.net/ont/sf#). See https://opengeospatial.github.io/ogc-geosparql/geosparql11/sf_geometries.ttl
 
@@ -738,7 +738,7 @@ CDIF limits schema:GeoShape to a box or line (schema.org includes other options)
 
 Intervals can be bounded by named ordinal eras (e.g. Jurassic, Tang dynasty, Paleolithic) identified by URI, or by numeric bounds that are time coordinates in a specified reference system (implemented by the TimePosition data type). This implementation is a simplified profile based on the [W3C OWL time specification](https://www.w3.org/TR/owl-time/), using the [http://www.w3.org/2006/time#](http://www.w3.org/2006/time) namespace, which is included in the default context for this profile.
 
-##### type
+##### @type
 
 \[Required -- \'time:ProperInterval\', repeatable\] (string:uri)
 
@@ -768,7 +768,7 @@ OR:
 
 ### time:TimePosition
 
-##### type
+##### @type
 
 \[Required -- \'time:TimePosition\', repeatable\] (string:uri)
 
@@ -782,7 +782,7 @@ OR:
 
 ### dqv:QualityMeasurement
 
-##### type
+##### @type
 
 \[Required -- \'dqv:QualityMeasurement\', repeatable\]
 
@@ -798,7 +798,7 @@ OR:
 
 Description of the kind of value expected for a parameter value.
 
-##### type
+##### @type
 
 \[Required -- \'PropertyValueSpecification\', repeatable\]
 
