@@ -4,19 +4,25 @@ Repository for the CDIF Data Description profile — extends the Discovery profi
 
 ## Specification
 
-- **[CDIFDataDescriptionClasses.docx](CDIFDataDescriptionClasses.docx)** — Classes and properties documentation
-- **[CDIFDataDescriptionProfileStructuredSchema.json](CDIFDataDescriptionProfileStructuredSchema.json)** — JSON Schema for validation (generated from metadataBuildingBlocks)
-- **[rules.shacl](rules.shacl)** — SHACL validation shapes (synced from metadataBuildingBlocks)
+- **[CDIFDataDescriptionImplementationGuide.md](CDIFDataDescriptionImplementationGuide.md)** — Implementation guide (Markdown source; companion **.docx** regenerated via pandoc with `--reference-doc` to preserve Word styles)
+- **[CDIFDataDescriptionProfileStructuredSchema.json](CDIFDataDescriptionProfileStructuredSchema.json)** — JSON Schema for validation (synced from `metadataBuildingBlocks/_sources/profiles/cdifProfiles/CDIFDataDescriptionProfile/resolvedSchema.json`)
+- **[CDIFDataDescription-frame.jsonld](CDIFDataDescription-frame.jsonld)** — JSON-LD frame used by `FrameAndValidate.py`
+- **[dataDescriptionRules.shacl](dataDescriptionRules.shacl)** — Merged SHACL validation shapes (synced from `metadataBuildingBlocks` — see [Merged SHACL section](#shacl-validation) below)
 
 ## What Data Description adds to Discovery
 
-The Data Description profile composes cdifCore + CDIFDiscoveryProfile + additional constraints:
+The Data Description profile composes cdifCore + Discovery's variable / coverage / quality properties + additional Data-Description-only constraints:
 
-- **`schema:variableMeasured`** items must have `@id` and `@type` including `cdi:InstanceVariable`, extended with DDI-CDI properties (`cdi:physicalDataType`, `cdi:intendedDataType`, `cdi:role`, `cdi:uses`, `cdi:qualifies`)
-- **`schema:distribution`** items can be typed as `cdi:TabularTextDataSet`, `cdi:LongStructureDataSet`, or `cdi:StructuredDataSet` with CSVW properties (`csvw:delimiter`, `csvw:header`, `csvw:headerRowCount`) and dimension counts (`cdifq:nRows`, `cdifq:nColumns`)
-- **`cdi:hasPhysicalMapping`** on distributions links physical columns to `variableMeasured` items via `cdi:formats_InstanceVariable` references with column indices and physical data types
-- **File characterization**: `cdi:characterSet`, `cdi:fileSize`, `cdi:fileSizeUofM`, `schema:contentSize`, `spdx:checksum`
-- **`dcterms:conformsTo`** must include `https://w3id.org/cdif/data_description/1.0` in addition to core and discovery
+- **`schema:variableMeasured`** items must have `@id` and `@type` including `cdi:InstanceVariable`, extended with the full DDI-CDI InstanceVariable / RepresentedVariable property set. See the [InstanceVariable across CDIF profiles](CDIFDataDescriptionImplementationGuide.md#variablemeasured) note in the IG for what Discovery, DataDescription, and DataStructure each carry. Key Data-Description-level properties:
+  - `cdif:physicalDataType`, `cdif:role`, `cdif:simpleUnitOfMeasure`, `cdif:uses`
+  - `cdi:function`, `cdi:platformType`, `cdi:source`, `cdi:hasIntendedDataType`, `cdi:describedUnitOfMeasure`, `cdi:qualifies`
+  - **Value-domain links** (added at the DataDescription profile level, not on the base InstanceVariable): `cdi:takesSentinelValuesFrom` (→ `cdif:SentinelValueDomain` only), `cdi:takesSubstantiveValuesFrom` (→ `cdif:SubstantiveValueDomain` only). Each value-domain node carries either an enumerated `cdif:takesValuesFrom` list (a `cdif:EnumerationDomain` referencing a SKOS scheme) or one or more `cdif:recommendedDataType` XSD type tokens.
+  - **Per-variable summary statistics**: `cdif:isDescribedBy_StatisticsCollection` → `cdif:StatisticsCollection` (groups one or more `cdi:Statistics` nodes, indexed by InstanceVariables).
+- **`schema:distribution`** items can be typed as `cdi:TabularTextDataSet`, `cdi:LongStructureDataSet`, or `cdi:StructuredDataSet` with CSVW properties (`csvw:delimiter`, `csvw:header`, `csvw:headerRowCount`, etc.) and CDIF file characterization (`cdi:characterSet`, `cdif:fileSize`, `cdif:fileSizeUofM`).
+- **`cdif:hasPhysicalMapping`** on distributions links physical columns/paths to `schema:variableMeasured` items via `cdif:formats_InstanceVariable` references, with `cdif:index` / `cdif:locator`, `cdif:format`, `cdif:physicalDataType`, plus `cdi:length`/`nullSequence`/`defaultValue`/`scale`/`decimalPositions`/etc. Each mapping item conforms to [CdifPhysicalMapping](CDIFDataDescriptionImplementationGuide.md#sec-cdifphysicalmapping).
+- **WebAPI distributions** — the `schema:potentialAction.schema:result` (a `schema:DataDownload`) can additionally be typed `cdi:PhysicalDataSet` (or subclass) and carry the same physical-realization properties as a sibling DataDownload distribution: `cdi:characterSet`, `cdif:fileSize`/`fileSizeUofM`, `cdif:hasPhysicalMapping` (whose `cdif:formats_InstanceVariable` references the parent dataset's `schema:variableMeasured` @ids — the API response is another physical realization of the same conceptual variables). `cdi:PhysicalDataSet` typing belongs on the result, NOT on the WebAPI distribution itself.
+- **Dataset-level extensions**: `cdif:hasPrimaryKey` (a `cdif:Key` whose `cdif:isComposedOf` is an ordered list of `cdi:ComponentPosition` wrappers — matches the canonical DDI-CDI PrimaryKey shape), `cdif:statistics` (dataset-wide `cdi:Statistics` / `cdif:StatisticsCollection`).
+- **`dcterms:conformsTo`** on the catalog record (`schema:subjectOf`) must include `https://w3id.org/cdif/manifest/1.0` and `https://w3id.org/cdif/data_description/1.0` in addition to core and discovery URIs.
 
 ## Examples
 
@@ -95,7 +101,16 @@ The script uses **`CDIFDataDescription-frame.jsonld`** to frame JSON-LD document
 
 ## SHACL Validation
 
-**`rules.shacl`** contains self-contained SHACL shapes for validating CDIF Data Description profile instances. This file merges shapes from all composing building blocks (cdifCore, cdifCatalogRecord, cdifDataDescription, definedTerm, variableMeasured, spatialExtent, temporalExtent, qualityMeasure) with the profile-level shapes, so it can be used standalone. Source shapes come from [`metadataBuildingBlocks/_sources/`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/tree/main/_sources) and should be regenerated when source shapes change.
+**`dataDescriptionRules.shacl`** contains self-contained SHACL shapes for validating CDIF Data Description profile instances (renamed from generic `rules.shacl` so it is discoverable in the release repo without ambiguity). The file is **merged** from the per-Building-Block source SHACL files in [`metadataBuildingBlocks/_sources/`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/tree/main/_sources):
+
+- `cdifProperties/`: `cdifCore`, `cdifDataDescription`, `cdifInstanceVariable`, `cdifPhysicalMapping`, `cdifTabularData`, `cdifLongData`, `cdifDataCube`, `cdifArchiveDistribution`
+- `schemaorgProperties/`: `variableMeasured`, `definedTerm`, `spatialExtent`, `temporalExtent`, `webAPI`
+- `qualityProperties/`: `qualityMeasure`
+- `profiles/cdifProfiles/CDIFDataDescriptionProfile`
+
+The merge uses **shape-name precedence**: when the same named SHACL shape is defined in multiple sources, the later (higher-precedence) source wins and earlier-source blank-node subgraphs are dropped — this is what allows the profile-level rules.shacl to override base-level shapes like `cdifd:rightsProperty`, `cdifd:CDIFDatasetMandatoryShape`, `cdifd:CDIFCatalogRecordShape` without producing the "PropertyShape with multiple sh:path" error pyshacl raises on a naive merge.
+
+Regenerate by re-running the merge from the source repository when source shapes change.
 
 ## Related repositories
 
