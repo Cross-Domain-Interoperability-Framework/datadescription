@@ -10,7 +10,9 @@
         "time": "http://www.w3.org/2006/time#",
         "sf": "http://www.opengis.net/ont/sf#",
         "cdi": "http://ddialliance.org/Specification/DDI-CDI/1.0/RDF/",
+        "cdif": "https://cdif.org/0.1/",
         "csvw": "http://www.w3.org/ns/csvw#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
         "ada": "https://ada.astromat.org/metadata/",
         "xas": "https://ada.astromat.org/metadata/xas/",
         "nxs": "https://manual.nexusformat.org/classes/"
@@ -117,8 +119,8 @@
             "@embed": "@always"
         },
         "cdi:characterSet": {},
-        "cdi:fileSize": {},
-        "cdi:fileSizeUofM": {},
+        "cdif:fileSize": {},
+        "cdif:fileSizeUofM": {},
         "cdi:arrayBase": {},
         "csvw:commentPrefix": {},
         "csvw:delimiter": {},
@@ -138,37 +140,85 @@
         "csvw:textDirection": {},
         "cdi:treatConsecutiveDelimitersAsOne": {},
         "csvw:trim": {},
-        "cdi:hasPhysicalMapping": {
+        "cdif:hasPhysicalMapping": {
             "@embed": "@always",
-            "cdi:decimalPositions": {},
-            "cdi:defaultValue": {},
-            "cdi:format": {},
-            "cdi:isRequired": {},
-            "cdi:maximumLength": {},
-            "cdi:minimumLength": {},
-            "cdi:nullSequence": {},
-            "cdi:physicalDataType": {},
-            "cdi:scale": {},
-            "cdi:index": {},
-            "cdi:locator": {},
-            "cdi:defaultDecimalSeparator": {},
-            "cdi:defaultDigitalGroupSeparator": {},
-            "cdi:displayLabel": {},
+            "cdif:index": {},
+            "cdif:locator": {},
+            "cdif:format": {},
+            "cdif:physicalDataType": {},
             "cdi:length": {},
-            "cdi:formats_InstanceVariable": {
+            "cdi:nullSequence": {},
+            "cdi:defaultValue": {},
+            "cdi:scale": {},
+            "cdi:decimalPositions": {},
+            "cdi:minimumLength": {},
+            "cdi:maximumLength": {},
+            "cdi:isRequired": {},
+            "cdif:formats_InstanceVariable": {
                 "@embed": "@always"
             }
         },
+        "cdi:isStructuredBy": {
+            "@embed": "@always"
+        },
         "schema:potentialAction": {
             "@embed": "@always",
-            "schema:target": {"@embed": "@always"},
-            "schema:result": {"@embed": "@always"},
+            "schema:name": {},
+            "schema:target": {
+                "@embed": "@always",
+                "schema:description": {},
+                "schema:urlTemplate": {},
+                "schema:httpMethod": {},
+                "schema:contentType": {}
+            },
+            "schema:result": {
+                "@embed": "@always",
+                "schema:name": {},
+                "schema:description": {},
+                "schema:contentUrl": {},
+                "schema:encodingFormat": {},
+                "cdi:characterSet": {},
+                "cdif:fileSize": {},
+                "cdif:fileSizeUofM": {},
+                "cdi:isDelimited": {},
+                "cdi:isFixedWidth": {},
+                "csvw:delimiter": {},
+                "csvw:header": {},
+                "csvw:headerRowCount": {},
+                "csvw:quoteChar": {},
+                "dcterms:conformsTo": {"@embed": "@always"},
+                "cdif:hasPhysicalMapping": {
+                    "@embed": "@always",
+                    "cdif:index": {},
+                    "cdif:locator": {},
+                    "cdif:format": {},
+                    "cdif:physicalDataType": {},
+                    "cdi:length": {},
+                    "cdi:nullSequence": {},
+                    "cdi:defaultValue": {},
+                    "cdi:scale": {},
+                    "cdi:decimalPositions": {},
+                    "cdi:minimumLength": {},
+                    "cdi:maximumLength": {},
+                    "cdi:isRequired": {},
+                    "cdif:formats_InstanceVariable": {
+                        "@embed": "@always"
+                    }
+                },
+                "cdi:isStructuredBy": {
+                    "@embed": "@always"
+                }
+            },
             "schema:object": {
                 "@embed": "@always",
-                "schema:variableMeasured": {"@embed": "@always"}
+                "schema:description": {}
             },
             "schema:query-input": {
-                "@embed": "@always"
+                "@embed": "@always",
+                "schema:valueName": {},
+                "schema:description": {},
+                "schema:valueRequired": {},
+                "schema:valuePattern": {}
             }
         },
         "schema:hasPart": {
@@ -177,18 +227,52 @@
             "schema:contentUrl": {},
             "schema:description": {},
             "schema:encodingFormat": {},
-            "cdi:fileSize": {},
-            "cdi:fileSizeUofM": {},
+            "cdif:fileSize": {},
+            "cdif:fileSizeUofM": {},
             "spdx:checksum": {"@embed": "@always"},
             "dcterms:conformsTo": {"@embed": "@always"},
-            "cdi:hasPhysicalMapping": {
+            "cdif:hasPhysicalMapping": {
                 "@embed": "@always",
-                "cdi:formats_InstanceVariable": {"@embed": "@always"}
+                "cdif:formats_InstanceVariable": {"@embed": "@always"}
             }
         },
-        "schema:serviceType": {},
+        "schema:serviceType": {"@embed": "@always"},
         "schema:termsOfService": {"@embed": "@always"},
         "schema:documentation": {"@embed": "@always"}
+    },
+
+    "cdif:hasPrimaryKey": {
+        "@embed": "@always",
+        "cdif:isComposedOf": {
+            "@embed": "@always",
+            "cdi:indexes": {"@embed": "@always"},
+            "cdi:value": {}
+        }
+    },
+
+    "cdif:statistics": {
+        "@embed": "@always",
+        "cdif:has_Statistics": {
+            "@embed": "@always",
+            "cdi:statistic": {"@embed": "@always"},
+            "cdi:typeOfStatistic": {"@embed": "@always"},
+            "cdi:hasWeight": {"@embed": "@always"},
+            "cdif:appliesTo": {"@embed": "@always"},
+            "cdif:has_CategoryStatistics": {
+                "@embed": "@always",
+                "cdi:for": {"@embed": "@always"},
+                "cdi:statistic": {"@embed": "@always"},
+                "cdi:typeOfStatistic": {"@embed": "@always"},
+                "cdi:hasWeight": {"@embed": "@always"}
+            }
+        },
+        "cdi:statistic": {"@embed": "@always"},
+        "cdi:typeOfStatistic": {"@embed": "@always"},
+        "cdi:hasWeight": {"@embed": "@always"},
+        "cdif:appliesTo": {"@embed": "@always"},
+        "cdif:has_CategoryStatistics": {"@embed": "@always"},
+        "cdif:indexedBy": {"@embed": "@always"},
+        "cdi:for": {"@embed": "@always"}
     },
 
     "schema:variableMeasured": {
@@ -203,16 +287,39 @@
         "schema:minValue": {},
         "schema:maxValue": {},
         "schema:url": {},
-        "cdi:identifier": {},
-        "cdi:name": {},
-        "cdi:displayLabel": {},
-        "cdi:intendedDataType": {},
-        "cdi:physicalDataType": {},
-        "cdi:role": {},
-        "cdi:qualifies": {"@embed": "@always"},
+        "cdif:physicalDataType": {"@embed": "@always"},
+        "cdif:role": {},
+        "cdif:simpleUnitOfMeasure": {"@embed": "@always"},
+        "cdif:uses": {"@embed": "@always"},
+        "cdif:isDescribedBy_StatisticsCollection": {"@embed": "@always"},
+        "cdi:function": {"@embed": "@always"},
+        "cdi:platformType": {"@embed": "@always"},
+        "cdi:source": {"@embed": "@always"},
+        "cdi:hasIntendedDataType": {"@embed": "@always"},
         "cdi:describedUnitOfMeasure": {"@embed": "@always"},
-        "cdi:simpleUnitOfMeasure": {},
-        "cdi:uses": {"@embed": "@always"}
+        "cdi:takesSentinelValuesFrom": {
+            "@embed": "@always",
+            "cdif:takesValuesFrom": {
+                "@embed": "@always",
+                "cdif:identifier": {"@embed": "@always"},
+                "schema:name": {},
+                "cdif:references": {"@embed": "@always"}
+            },
+            "cdif:displayLabel": {},
+            "cdif:recommendedDataType": {}
+        },
+        "cdi:takesSubstantiveValuesFrom": {
+            "@embed": "@always",
+            "cdif:takesValuesFrom": {
+                "@embed": "@always",
+                "cdif:identifier": {"@embed": "@always"},
+                "schema:name": {},
+                "cdif:references": {"@embed": "@always"}
+            },
+            "cdif:displayLabel": {},
+            "cdif:recommendedDataType": {}
+        },
+        "cdi:qualifies": {"@embed": "@always"}
     },
 
     "schema:spatialCoverage": {
